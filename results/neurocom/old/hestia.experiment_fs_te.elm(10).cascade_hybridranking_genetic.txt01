@@ -1,0 +1,62 @@
+bash matlab.bash <<< setenv('LC_ALL','C'); experiment_fs_te('feature_selection_cascade_hybridranking_genetic', 'elm(10)'), quit" > results/neurocom/hestia.experiment_fs_te.elm(10).cascade_hybridranking_genetic.txt01
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> Classifier: ELM - Extreme Learning Machine
+
+traintime =
+
+   1.4707e+04
+
+
+used_features =
+
+  Columns 1 through 13
+
+    10    47     1    44    51    34    28     4    18    19    50    22    45
+
+  Columns 14 through 26
+
+    43    39    52    35    21    46    20    13     7    30    38    16    29
+
+  Columns 27 through 30
+
+    23     8    41    17
+
+
+numfeats =
+
+    30
+
+testfile time     acc      prec     rec      f1s
+d00_te.m 0.040000 1.000000 1.000000 1.000000 1.000000
+d01_te.m 0.050000 0.996875 0.996250 1.000000 0.998121
+d02_te.m 0.050000 0.980208 0.977500 1.000000 0.988622
+d04_te.m 0.050000 1.000000 1.000000 1.000000 1.000000
+d05_te.m 0.060000 0.996875 0.996250 1.000000 0.998121
+
+results =
+
+    0.0400    1.0000    1.0000    1.0000    1.0000
+    0.0500    0.9969    0.9962    1.0000    0.9981
+    0.0500    0.9802    0.9775    1.0000    0.9886
+    0.0500    1.0000    1.0000    1.0000    1.0000
+    0.0600    0.9969    0.9962    1.0000    0.9981
+
+
+averages =
+
+    0.0500    0.9948    0.9940    1.0000    0.9970
+
+
+stdevs =
+
+    0.0071    0.0083    0.0094         0    0.0048
+

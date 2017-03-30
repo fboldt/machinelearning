@@ -1,0 +1,61 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> 
+classifier = 
+
+                 C: 512
+            kernel: 'rbf'
+              kval: 2
+    classifiername: 'SVM - Support Vector Machine'
+             train: @svmtrain
+           predict: @svmpredict
+       constructor: @classifier_svm
+       autotunning: 0
+            labels: [0 1 2 4 5]
+             model: [1x1 classreg.learning.FitTemplate]
+        trainedSVM: [1x1 ClassificationECOC]
+     training_time: 1.2617e+04
+
+
+traintime =
+
+   1.2617e+04
+
+
+numfeats =
+
+    14
+
+testfile time     acc      prec     rec      f1s
+d00_te.m 0.410000 0.228125 0.228125 1.000000 0.371501
+d01_te.m 0.380000 0.038542 0.003750 1.000000 0.007472
+d02_te.m 0.400000 0.029167 0.000000 NaN NaN
+d04_te.m 0.390000 0.406250 0.443750 0.817972 0.575365
+d05_te.m 0.380000 0.179167 0.193750 0.557554 0.287570
+
+results =
+
+    0.4100    0.2281    0.2281    1.0000    0.3715
+    0.3800    0.0385    0.0037    1.0000    0.0075
+    0.4000    0.0292         0       NaN       NaN
+    0.3900    0.4062    0.4437    0.8180    0.5754
+    0.3800    0.1792    0.1938    0.5576    0.2876
+
+
+averages =
+
+    0.3920    0.1763    0.1739       NaN       NaN
+
+
+stdevs =
+
+    0.0130    0.1551    0.1839       NaN       NaN
+

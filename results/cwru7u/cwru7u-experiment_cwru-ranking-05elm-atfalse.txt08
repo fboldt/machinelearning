@@ -1,0 +1,69 @@
+bash matlab.bash <<< "experiment_cwru('datasets/cwru7u', 'elm', 'ranking', 05, 08, false), quit" > results/cwru7u-experiment_cwru-ranking-05elm-atfalse.txt08
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking 5 classifiers
+fold-01: 0.122113
+confold: 1,6,0,1,0,0,0,8
+confold: 1,3,0,12,0,0,0,0
+confold: 1,10,2,2,0,0,0,1
+confold: 1,0,0,15,0,0,0,0
+confold: 1,5,0,0,0,0,0,0
+confold: 1,26,5,2,0,0,0,2
+confold: 1,5,0,15,10,0,0,0
+feats-fold-1:   Columns 1 through 13
+
+     1     2     3     4     5     8    12    17    20    21    23    27    28
+
+  Columns 14 through 26
+
+    32    35    36    38    42    43    44    45    50    51    53    54    55
+
+  Columns 27 through 39
+
+    56    57    59    60    66    69    76    83    93   147   148   151   152
+
+  Columns 40 through 52
+
+   154   185   191   194   197   207   214   215   216   221   222   223   224
+
+  Columns 53 through 65
+
+   225   227   228   229   232   233   239   240   243   244   261   264   276
+
+fold-02: 0.333139
+confold: 2,9,0,0,5,1,0,0
+confold: 2,1,4,1,9,0,0,0
+confold: 2,0,0,0,2,13,0,0
+confold: 2,6,0,0,5,0,0,4
+confold: 2,1,0,0,4,0,0,0
+confold: 2,1,0,0,5,26,3,0
+confold: 2,5,0,0,7,0,0,13
+feats-fold-2:   Columns 1 through 13
+
+     1     2     3     5     9    11    12    13    14    15    16    20    21
+
+  Columns 14 through 26
+
+    22    24    26    29    31    33    34    44    46    51    52    57    58
+
+  Columns 27 through 39
+
+    81   143   144   146   148   150   153   157   168   189   193   196   210
+
+  Columns 40 through 52
+
+   215   217   221   232   233   239   243   244   245   252   259   260   264
+
+  Columns 53 through 55
+
+   266   270   271
+

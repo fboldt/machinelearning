@@ -1,0 +1,318 @@
+bash matlab.bash <<< setenv('LC_ALL','C'); experiment_fs_te3('feature_selection_cascade_hybridranking_hybridsfs_genetic', 'elm(10)', 02), quit" > results/neurocom/hestia.experiment_fs_te3.elm(10).cascade_hybridranking_hybridsfs_genetic.fste02
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> Classifier: ELM - Extreme Learning Machine
+
+traintime =
+
+   2.3723e+03
+
+
+used_features =
+
+     4    18    19    50    16    34    11    20    33    21
+
+
+numfeats =
+
+    10
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d01_te.m       10 2372.340000 0.050000 0.997917 0.997500 1.000000 0.998748
+
+traintime =
+
+   1.8911e+03
+
+
+used_features =
+
+    10    47    34    28    50    19    18    11     7    13    46
+
+
+numfeats =
+
+    11
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d02_te.m       11 1891.120000 0.040000 0.970833 0.965000 1.000000 0.982188
+
+traintime =
+
+   2.5556e+03
+
+
+used_features =
+
+    40    39    37    16     7    13    41    19    50    18
+
+
+numfeats =
+
+    10
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d03_te.m       10 2555.630000 0.030000 0.519792 0.498750 0.869281 0.633836
+
+traintime =
+
+  216.7200
+
+
+used_features =
+
+    51
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d04_te.m        1 216.720000 0.020000 1.000000 1.000000 1.000000 1.000000
+
+traintime =
+
+   2.7767e+03
+
+
+used_features =
+
+    52    20    50     7    16    18    38
+
+
+numfeats =
+
+     7
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d05_te.m        7 2776.690000 0.020000 0.721875 0.677500 0.983666 0.802369
+
+traintime =
+
+  201.4400
+
+
+used_features =
+
+    44
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d06_te.m        1 201.440000 0.020000 0.997917 0.997500 1.000000 0.998748
+
+traintime =
+
+   1.2104e+03
+
+
+used_features =
+
+    45    50    13     7
+
+
+numfeats =
+
+     4
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d07_te.m        4 1210.360000 0.020000 0.998958 0.998750 1.000000 0.999375
+
+traintime =
+
+   1.6435e+03
+
+
+used_features =
+
+    29     1    44    20    23    34    16    47
+
+
+numfeats =
+
+     8
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d08_te.m        8 1643.500000 0.020000 0.653125 0.583750 1.000000 0.737174
+
+traintime =
+
+   1.9162e+03
+
+
+used_features =
+
+    50    18     7    13    20
+
+
+numfeats =
+
+     5
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d09_te.m        5 1916.180000 0.030000 0.527083 0.472500 0.921951 0.624793
+
+traintime =
+
+  483.0100
+
+
+used_features =
+
+    19    18    50    38     7
+
+
+numfeats =
+
+     5
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d10_te.m        5 483.010000 0.020000 0.682292 0.630000 0.982456 0.767708
+
+traintime =
+
+  363.3300
+
+
+used_features =
+
+    51     9
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d11_te.m        2 363.330000 0.020000 0.829167 0.805000 0.987730 0.887052
+
+traintime =
+
+   1.6469e+03
+
+
+used_features =
+
+    50    16    19    11    20
+
+
+numfeats =
+
+     5
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d12_te.m        5 1646.930000 0.030000 0.851042 0.821250 1.000000 0.901853
+
+traintime =
+
+   1.6711e+03
+
+
+used_features =
+
+    19    50    18     7    13    16    34    46    38    21
+
+
+numfeats =
+
+    10
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d13_te.m       10 1671.050000 0.030000 0.805208 0.766250 1.000000 0.867657
+
+traintime =
+
+  275.9200
+
+
+used_features =
+
+     9    21
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d14_te.m        2 275.920000 0.050000 0.998958 0.998750 1.000000 0.999375
+
+traintime =
+
+   1.4758e+03
+
+
+used_features =
+
+    50    18    39    13     7    16
+
+
+numfeats =
+
+     6
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d15_te.m        6 1475.820000 0.030000 0.572917 0.568750 0.875000 0.689394
+
+traintime =
+
+  365.3400
+
+
+used_features =
+
+    50    19    18
+
+
+numfeats =
+
+     3
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d16_te.m        3 365.340000 0.030000 0.847917 0.865000 0.947945 0.904575
+
+traintime =
+
+  298.2700
+
+
+used_features =
+
+    21     9
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d17_te.m        2 298.270000 0.030000 0.962500 0.955000 1.000000 0.976982
+
+traintime =
+
+  691.1500
+
+
+used_features =
+
+    16     4
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d18_te.m        2 691.150000 0.030000 0.295833 0.155000 1.000000 0.268398

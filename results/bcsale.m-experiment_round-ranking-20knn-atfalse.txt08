@@ -1,0 +1,152 @@
+bash matlab.bash <<< "experiment_round('datasets/bcsale.m', 'knn', 'ranking', 20, 08, false), quit" > results/bcsale.m-experiment_round-ranking-20knn-atfalse.txt08
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking 20 classifiers
+fold-01: 0.791097
+confold: 1,364,2,0,3,2
+confold: 1,1,47,1,0,0
+confold: 1,0,1,4,0,0
+confold: 1,2,0,0,1,0
+confold: 1,2,0,0,0,27
+fold-02: 0.718978
+confold: 2,359,4,0,3,5
+confold: 2,2,45,1,0,0
+confold: 2,1,2,2,0,0
+confold: 2,3,0,0,1,0
+confold: 2,0,0,0,0,29
+fold-03: 0.761175
+confold: 3,361,5,0,1,4
+confold: 3,1,45,2,0,0
+confold: 3,1,0,4,0,0
+confold: 3,2,1,0,1,0
+confold: 3,5,1,0,0,23
+fold-04: 0.810148
+confold: 4,365,3,0,1,2
+confold: 4,7,41,0,0,0
+confold: 4,0,0,5,0,0
+confold: 4,3,0,0,1,0
+confold: 4,3,0,1,0,25
+fold-05: 0.779079
+confold: 5,359,3,2,3,4
+confold: 5,1,47,0,0,0
+confold: 5,0,0,5,0,0
+confold: 5,3,0,0,1,0
+confold: 5,4,0,0,0,25
+fold-06: 0.843728
+confold: 6,366,3,0,1,1
+confold: 6,7,41,0,0,0
+confold: 6,1,0,4,0,0
+confold: 6,1,0,1,2,0
+confold: 6,1,0,0,0,28
+fold-07: 0.782678
+confold: 7,359,6,1,3,1
+confold: 7,3,45,1,0,0
+confold: 7,0,0,5,0,0
+confold: 7,2,0,0,1,0
+confold: 7,5,0,0,0,25
+fold-08: 0.731427
+confold: 8,360,4,1,3,2
+confold: 8,3,46,0,0,0
+confold: 8,0,3,2,0,0
+confold: 8,2,0,0,1,0
+confold: 8,1,0,0,0,29
+fold-09: 0.837047
+confold: 9,365,2,0,1,2
+confold: 9,2,47,0,0,0
+confold: 9,1,0,4,0,0
+confold: 9,2,0,0,1,0
+confold: 9,2,0,0,0,28
+fold-10: 0.765406
+confold: 10,367,3,0,0,0
+confold: 10,2,47,0,0,0
+confold: 10,1,2,2,0,0
+confold: 10,3,0,0,0,0
+confold: 10,6,0,0,0,24
+feats-fold-1:      1     2     3     4     5     6     7     8
+
+feats-fold-2:      1     2     3     4     5     6     7     8
+
+feats-fold-3:      1     2     3     4     5     6     7     8
+
+feats-fold-4:      1     2     3     4     5     6     7     8
+
+feats-fold-5:      1     2     3     4     5     6     7     8
+
+feats-fold-6:      1     2     3     4     5     6     7     8
+
+feats-fold-7:      1     2     3     4     5     6     7     8
+
+feats-fold-8:      1     2     3     4     5     6     7     8
+
+feats-fold-9:      1     2     3     4     5     6     7     8
+
+feats-fold-10:      1     2     3     4     5     6     7     8
+
+
+results =
+
+    0.7911
+    0.7190
+    0.7612
+    0.8101
+    0.7791
+    0.8437
+    0.7827
+    0.7314
+    0.8370
+    0.7654
+
+
+totaltime =
+
+   1.6439e+04
+
+
+confusion =
+
+        3625          35           4          19          23
+          29         451           5           0           0
+           5           8          37           0           0
+          23           1           1          10           0
+          29           1           1           0         263
+
+
+trtime =
+
+   1.0e+03 *
+
+  Columns 1 through 7
+
+    1.5993    1.6213    1.6313    1.6095    1.6255    1.6529    1.6351
+
+  Columns 8 through 10
+
+    1.6395    1.6593    1.6323
+
+
+tetime =
+
+  Columns 1 through 7
+
+   12.8800   13.2000   13.1400   13.6000   13.4700   13.5900   12.7000
+
+  Columns 8 through 10
+
+   13.5400   13.4000   13.5200
+
+
+numfeats =
+
+     8     8     8     8     8     8     8     8     8     8
+
+meanperf    std_perf    meanfeat    std_feat    trtime      stdtrti     tetime    stdteti
+0.782076    0.040774    8.000000    0.000000    1630.597000    18.125495    13.304000    0.314614

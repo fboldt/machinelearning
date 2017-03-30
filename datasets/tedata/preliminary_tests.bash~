@@ -1,0 +1,27 @@
+#!/bin/bash
+CLASS=16
+TRAIN=/home/francisco/Dropbox/Datasets/tedata/d00d$CLASS.dat
+TEST=/home/francisco/Dropbox/Datasets/tedata/d00_ted$CLASS\_te.dat
+printf "2\n2\n4\n2\n2\nn\nn\nn\ny\n1\n$TEST\ny\n52\n" | ./tooldiag -file $TRAIN  #SFS train/test sensitivity
+
+for CLASS in `echo {01..21}`
+do
+	TRAIN=/home/francisco/Dropbox/Datasets/tedata/d00d$CLASS.dat
+	printf "2\n1\n4\n2\n2\nn\ny\ny\n52\n52\nte$CLASS.feat\nq\nq\n" | ./tooldiag -file $TRAIN #Best Feature LOO sensitivity
+done
+
+NFEATS=1
+SENSITIVITY=2
+SVM="1\n10\ny\n\n"
+BESTFEATURES="2\n1\n4\n$SENSITIVITY\n2\nn\nn\nn\nn\n$NFEATS\n$NFEATS\n\nq\n" #best-features loo sensitivity
+QUIT="q\n" #quit
+for CLASS in `echo {01..21}`
+do
+	TRAIN=/home/francisco/Dropbox/Datasets/tedata/d00d$CLASS.dat
+	TEST=/home/francisco/Dropbox/Datasets/tedata/d00_ted$CLASS\_te.dat
+	PERFORMANCE="5\n1\n$TEST\n2\n2\ny\nclass$CLASS.res\nn\nq\n" #test sensitivity
+	printf $BESTFEATURES$PERFORMANCE$QUIT | ./tooldiag -file $TRAIN
+done
+cat ../data/class*.res | grep "Value ="
+
+

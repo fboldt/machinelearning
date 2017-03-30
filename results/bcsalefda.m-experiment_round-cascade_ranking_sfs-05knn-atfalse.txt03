@@ -1,0 +1,48 @@
+bash matlab.bash <<< "experiment_round('datasets/bcsalefda.m', 'knn', 'cascade_ranking_sfs', 05, 03, false), quit" > results/bcsalefda.m-experiment_round-cascade_ranking_sfs-05knn-atfalse.txt03
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> cascade_ranking_sfs 5 classifiers
+fold-01: 0.803348
+confold: 1,364,4,0,2,1
+confold: 1,3,45,1,0,0
+confold: 1,0,0,5,0,0
+confold: 1,1,0,1,1,0
+confold: 1,3,0,0,0,26
+fold-02: 0.681374
+confold: 2,362,2,0,0,7
+confold: 2,2,44,2,0,0
+confold: 2,0,1,3,1,0
+confold: 2,4,0,0,0,0
+confold: 2,0,0,0,0,29
+fold-03: 0.789965
+confold: 3,364,3,0,2,2
+confold: 3,4,44,0,0,0
+confold: 3,0,1,4,0,0
+confold: 3,3,0,0,1,0
+confold: 3,5,0,0,0,24
+fold-04: 0.745910
+confold: 4,365,5,0,0,1
+confold: 4,3,45,0,0,0
+confold: 4,0,0,5,0,0
+confold: 4,4,0,0,0,0
+confold: 4,7,0,0,1,21
+fold-05: 0.807734
+confold: 5,363,4,0,3,1
+confold: 5,0,48,0,0,0
+confold: 5,1,0,4,0,0
+confold: 5,3,0,0,1,0
+confold: 5,2,0,0,0,27
+fold-06: 0.914863
+confold: 6,363,5,1,1,1
+confold: 6,1,47,0,0,0
+confold: 6,0,0,5,0,0
+confold: 6,1,0,0,3,0
+confold: 6,0,0,0,0,29

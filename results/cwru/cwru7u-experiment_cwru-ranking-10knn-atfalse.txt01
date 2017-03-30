@@ -1,0 +1,29 @@
+bash matlab.bash <<< "experiment_cwru('datasets/cwru7u', 'knn', 'ranking', 10, 01, false), quit" > results/cwru7u-experiment_cwru-ranking-10knn-atfalse.txt01
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking 10 classifiers
+fold-01: 0.862478
+confold: 1,14,0,1,0,0,0,0
+confold: 1,0,15,0,0,0,0,0
+confold: 1,0,0,15,0,0,0,0
+confold: 1,0,0,0,12,0,0,3
+confold: 1,5,0,0,0,0,0,0
+confold: 1,0,0,0,0,0,35,0
+confold: 1,0,2,0,0,0,0,28
+feats-fold-1:   Columns 1 through 13
+
+     1     2    16    17    26    40    42    43    49    51    55   137   168
+
+  Columns 14 through 18
+
+   193   215   216   228   246
+

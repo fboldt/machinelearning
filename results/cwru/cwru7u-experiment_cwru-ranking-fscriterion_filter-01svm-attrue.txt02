@@ -1,0 +1,14 @@
+bash matlab.bash <<< "experiment_cwru('datasets/cwru7u', 'svm', 'ranking(fscriterion_filter)', 01, 02, true), quit" > results/cwru7u-experiment_cwru-ranking-fscriterion_filter-01svm-attrue.txt02
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking(fscriterion_filter) 1 classifiers
+>> 

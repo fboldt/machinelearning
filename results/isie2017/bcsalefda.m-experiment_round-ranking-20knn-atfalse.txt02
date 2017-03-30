@@ -1,0 +1,67 @@
+bash matlab.bash <<< "experiment_round('datasets/bcsalefda.m', 'knn', 'ranking', 20, 02, false), quit" > results/bcsalefda.m-experiment_round-ranking-20knn-atfalse.txt02
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking 20 classifiers
+fold-01: 0.867351
+confold: 1,361,4,0,4,2
+confold: 1,1,48,0,0,0
+confold: 1,0,0,5,0,0
+confold: 1,1,0,0,2,0
+confold: 1,3,0,0,0,26
+fold-02: 0.884464
+confold: 2,367,1,0,1,2
+confold: 2,4,44,0,0,0
+confold: 2,0,0,5,0,0
+confold: 2,2,0,0,2,0
+confold: 2,3,0,0,0,26
+fold-03: 0.793644
+confold: 3,368,1,0,1,1
+confold: 3,2,46,0,0,0
+confold: 3,0,1,3,1,0
+confold: 3,3,0,0,1,0
+confold: 3,2,0,0,0,27
+fold-04: 0.747034
+confold: 4,370,1,0,0,0
+confold: 4,4,44,0,0,0
+confold: 4,1,0,4,0,0
+confold: 4,3,0,1,0,0
+confold: 4,0,0,0,0,29
+fold-05: 0.740987
+confold: 5,363,2,0,1,5
+confold: 5,1,47,0,0,0
+confold: 5,1,0,4,0,0
+confold: 5,4,0,0,0,0
+confold: 5,2,1,0,0,26
+fold-06: 0.766772
+confold: 6,363,5,0,2,1
+confold: 6,0,48,0,0,0
+confold: 6,1,2,2,0,0
+confold: 6,3,0,0,1,0
+confold: 6,2,0,0,0,27
+fold-07: 0.761009
+confold: 7,357,8,0,4,1
+confold: 7,1,48,0,0,0
+confold: 7,1,2,2,0,0
+confold: 7,2,0,0,1,0
+confold: 7,1,0,0,0,29
+fold-08: 0.856341
+confold: 8,359,6,0,2,3
+confold: 8,3,46,0,0,0
+confold: 8,0,1,4,0,0
+confold: 8,1,0,0,2,0
+confold: 8,2,0,0,0,28
+fold-09: 0.680280
+confold: 9,358,4,1,4,3
+confold: 9,4,43,2,0,0
+confold: 9,0,1,4,0,0
+confold: 9,3,0,0,0,0
+confold: 9,5,0,0,0,25

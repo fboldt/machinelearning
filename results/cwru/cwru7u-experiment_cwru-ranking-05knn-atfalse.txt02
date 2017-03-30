@@ -1,0 +1,125 @@
+bash matlab.bash <<< "experiment_cwru('datasets/cwru7u', 'knn', 'ranking', 05, 02, false), quit" > results/cwru7u-experiment_cwru-ranking-05knn-atfalse.txt02
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> ranking 5 classifiers
+fold-01: 0.657232
+confold: 1,13,0,2,0,0,0,0
+confold: 1,0,10,0,0,0,0,5
+confold: 1,0,0,4,0,0,11,0
+confold: 1,0,5,0,7,0,0,3
+confold: 1,5,0,0,0,0,0,0
+confold: 1,0,0,2,0,0,32,1
+confold: 1,0,3,0,0,0,0,27
+feats-fold-1:   Columns 1 through 13
+
+     1     2     5    18    25    28    33    48    49    50    59    62   173
+
+  Columns 14 through 17
+
+   186   218   237   255
+
+fold-02: 0.917902
+confold: 2,15,0,0,0,0,0,0
+confold: 2,0,15,0,0,0,0,0
+confold: 2,0,0,15,0,0,0,0
+confold: 2,0,0,0,10,0,0,5
+confold: 2,0,0,0,0,5,0,0
+confold: 2,0,0,0,0,0,35,0
+confold: 2,0,7,0,0,0,0,18
+feats-fold-2:   Columns 1 through 13
+
+     1     2     5    17    18    22    23    31    34    50    54    59    60
+
+  Columns 14 through 26
+
+    62    87   155   166   168   171   173   179   186   218   235   237   245
+
+  Columns 27 through 31
+
+   253   256   268   295   296
+
+fold-03: 0.962184
+confold: 3,15,0,0,0,0,0,0
+confold: 3,0,11,0,0,0,1,3
+confold: 3,0,0,15,0,0,0,0
+confold: 3,0,0,0,15,0,0,0
+confold: 3,0,0,0,0,5,0,0
+confold: 3,0,0,0,0,0,35,0
+confold: 3,0,1,0,0,0,0,24
+feats-fold-3:   Columns 1 through 13
+
+     1     2     5    17    23    28    41    50    51    54    55    59    60
+
+  Columns 14 through 26
+
+    62    92   103   104   156   161   162   166   168   171   173   179   183
+
+  Columns 27 through 35
+
+   184   186   218   235   237   245   256   268   295
+
+fold-04: 0.903925
+confold: 4,5,0,0,0,0,0,10
+confold: 4,0,15,0,0,0,0,0
+confold: 4,0,0,11,0,0,4,0
+confold: 4,0,0,0,15,0,0,0
+confold: 4,0,0,0,0,5,0,0
+confold: 4,0,0,0,0,0,35,0
+confold: 4,0,0,0,0,0,0,25
+feats-fold-4:   Columns 1 through 13
+
+     1     2     5    12    14    17    22    24    28    40    41    50    51
+
+  Columns 14 through 24
+
+    54    62   168   171   186   235   245   253   268   269   295
+
+
+results =
+
+    0.6572    0.9179    0.9622    0.9039
+
+
+totaltime =
+
+   4.4134e+03
+
+
+confusion =
+
+    48     0     2     0     0     0    10
+     0    51     0     0     0     1     8
+     0     0    45     0     0    15     0
+     0     5     0    47     0     0     8
+     5     0     0     0    15     0     0
+     0     0     2     0     0   137     1
+     0    11     0     0     0     0    94
+
+
+trtime =
+
+   1.0e+03 *
+
+    1.1139    1.0944    1.0915    1.1122
+
+
+tetime =
+
+    0.2000    0.1900    0.1800    0.1900
+
+
+numfeats =
+
+    17    31    35    24
+
+meanperf    std_perf    meanfeat    std_feat    trtime      stdtrti     tetime    stdteti
+0.860311    0.137645    26.750000    7.932003    1102.987500    11.724264    0.190000    0.008165

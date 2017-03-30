@@ -1,0 +1,59 @@
+bash matlab.bash <<< setenv('LC_ALL','C'); experiment_fs_te('feature_selection_cascade_hybridsfs_genetic', 'elm(10)', 06), quit" > results/neurocom/ares.experiment_fs_te.elm(10).cascade_hybridsfs_genetic.gspca06
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> Classifier: ELM - Extreme Learning Machine
+
+traintime =
+
+   1.4295e+04
+
+
+used_features =
+
+  Columns 1 through 13
+
+    10    51    47    34    28     4    18    22    52    11    30    35    16
+
+  Columns 14 through 24
+
+     7    13    31    46    20    25    29    38    33    17    41
+
+
+numfeats =
+
+    24
+
+testfile time     acc      prec     rec      f1s
+d00_te.m 0.040000 0.996875 0.996875 1.000000 0.998435
+d01_te.m 0.050000 0.995833 0.995000 1.000000 0.997494
+d02_te.m 0.060000 0.972917 0.967500 1.000000 0.983482
+d04_te.m 0.050000 1.000000 1.000000 1.000000 1.000000
+d05_te.m 0.050000 0.998958 0.998750 1.000000 0.999375
+
+results =
+
+    0.0400    0.9969    0.9969    1.0000    0.9984
+    0.0500    0.9958    0.9950    1.0000    0.9975
+    0.0600    0.9729    0.9675    1.0000    0.9835
+    0.0500    1.0000    1.0000    1.0000    1.0000
+    0.0500    0.9990    0.9988    1.0000    0.9994
+
+
+averages =
+
+    0.0500    0.9929    0.9916    1.0000    0.9958
+
+
+stdevs =
+
+    0.0071    0.0113    0.0136         0    0.0069
+

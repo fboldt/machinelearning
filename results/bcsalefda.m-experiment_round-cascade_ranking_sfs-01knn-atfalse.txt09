@@ -1,0 +1,203 @@
+bash matlab.bash <<< "experiment_round('datasets/bcsalefda.m', 'knn', 'cascade_ranking_sfs', 01, 09, false), quit" > results/bcsalefda.m-experiment_round-cascade_ranking_sfs-01knn-atfalse.txt09
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> cascade_ranking_sfs 1 classifiers
+fold-01: 0.673500
+confold: 1,359,5,0,2,5
+confold: 1,5,44,0,0,0
+confold: 1,0,3,2,0,0
+confold: 1,3,0,0,0,0
+confold: 1,4,0,0,0,25
+fold-02: 0.842309
+confold: 2,365,2,0,1,3
+confold: 2,5,43,0,0,0
+confold: 2,0,0,5,0,0
+confold: 2,3,0,0,1,0
+confold: 2,1,0,0,0,28
+fold-03: 0.755758
+confold: 3,364,2,0,3,2
+confold: 3,2,45,1,0,0
+confold: 3,1,1,3,0,0
+confold: 3,2,0,0,1,1
+confold: 3,1,0,0,0,28
+fold-04: 0.870193
+confold: 4,363,2,0,1,5
+confold: 4,6,42,0,0,0
+confold: 4,0,0,5,0,0
+confold: 4,1,1,0,2,0
+confold: 4,2,0,0,0,27
+fold-05: 0.803536
+confold: 5,364,4,0,3,0
+confold: 5,1,47,0,0,0
+confold: 5,1,0,4,0,0
+confold: 5,3,0,0,1,0
+confold: 5,2,1,0,0,26
+fold-06: 0.796160
+confold: 6,364,6,0,1,0
+confold: 6,6,42,0,0,0
+confold: 6,0,0,4,1,0
+confold: 6,3,0,0,1,0
+confold: 6,3,0,0,0,26
+fold-07: 0.894434
+confold: 7,365,2,0,0,3
+confold: 7,3,46,0,0,0
+confold: 7,0,0,5,0,0
+confold: 7,2,0,0,1,0
+confold: 7,3,0,0,0,27
+fold-08: 0.721706
+confold: 8,360,4,0,3,3
+confold: 8,0,48,1,0,0
+confold: 8,1,0,4,0,0
+confold: 8,3,0,0,0,0
+confold: 8,4,0,0,0,26
+fold-09: 0.645716
+confold: 9,362,4,1,1,2
+confold: 9,4,45,0,0,0
+confold: 9,2,1,2,0,0
+confold: 9,2,0,1,0,0
+confold: 9,4,0,0,0,26
+fold-10: 0.713809
+confold: 10,361,4,0,2,3
+confold: 10,1,47,1,0,0
+confold: 10,1,0,4,0,0
+confold: 10,3,0,0,0,0
+confold: 10,1,0,1,0,28
+feats-fold-1:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8     9    10    11    12    13
+
+  Columns 14 through 19
+
+    15    16    17    18    19    20
+
+feats-fold-2:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8     9    10    11    12    13
+
+  Columns 14 through 19
+
+    15    16    17    18    19    20
+
+feats-fold-3:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8     9    10    11    12    13
+
+  Columns 14 through 19
+
+    14    15    16    18    19    20
+
+feats-fold-4:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8     9    10    13    14    15
+
+  Columns 14 through 17
+
+    16    18    19    20
+
+feats-fold-5:   Columns 1 through 13
+
+     1     2     4     5     6     7     8     9    10    11    12    15    16
+
+  Columns 14 through 15
+
+    19    20
+
+feats-fold-6:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8     9    10    11    13    15
+
+  Columns 14 through 17
+
+    16    18    19    20
+
+feats-fold-7:      1     2     3     4     5     6     7     9    15    19    20
+
+feats-fold-8:   Columns 1 through 13
+
+     1     2     4     5     6     7     8     9    10    11    12    13    14
+
+  Columns 14 through 19
+
+    15    16    17    18    19    20
+
+feats-fold-9:   Columns 1 through 13
+
+     1     2     4     5     6     7     8     9    10    11    12    13    14
+
+  Columns 14 through 18
+
+    15    16    18    19    20
+
+feats-fold-10:   Columns 1 through 13
+
+     1     2     3     4     5     6     7     8    10    11    12    13    14
+
+  Columns 14 through 19
+
+    15    16    17    18    19    20
+
+
+results =
+
+    0.6735
+    0.8423
+    0.7558
+    0.8702
+    0.8035
+    0.7962
+    0.8944
+    0.7217
+    0.6457
+    0.7138
+
+
+totaltime =
+
+   4.5226e+03
+
+
+confusion =
+
+        3627          35           1          17          26
+          33         449           3           0           0
+           6           5          38           1           0
+          25           1           1           7           1
+          25           1           1           0         267
+
+
+trtime =
+
+  Columns 1 through 7
+
+  578.9000  435.0200  462.1700  377.9300  399.3700  380.1600  347.6000
+
+  Columns 8 through 10
+
+  580.2500  497.0300  457.1400
+
+
+tetime =
+
+  Columns 1 through 7
+
+    0.6700    0.6700    0.6600    0.6500    0.6700    0.6600    0.6500
+
+  Columns 8 through 10
+
+    0.6600    0.6700    0.6900
+
+
+numfeats =
+
+    19    19    19    17    15    17    11    19    18    19
+
+meanperf    std_perf    meanfeat    std_feat    trtime      stdtrti     tetime    stdteti
+0.771712    0.083654    17.300000    2.584140    451.557000    81.180325    0.665000    0.011785

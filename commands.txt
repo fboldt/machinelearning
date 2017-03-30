@@ -1,0 +1,64 @@
+
+#*** Definitions ***#
+EXTENSION='neubio'
+DATASETS='bio/colon.m bio/prostate.m bio/breast_2.m bio/breast_3.m bio/leukemia.m bio/lymphoma.m bio/adenocarcinoma.m bio/brain.m bio/nci.m' # 
+CLASSIFIERS='elm(10)'
+FSCRITERIA='filter'
+NUMSCLA='01'
+SEEDS=`echo {01..10}`
+METHODS="cascade_ranking_sfs_genetic cascade_ranking_genetic cascade_sfs_genetic genetic"
+bash run_experiment_fold.bash "$DATASETS" "$EXTENSION" "$SEEDS" "$CLASSIFIERS" "$METHODS" "$FSCRITERIA" "$NUMSCLA" & 
+
+
+DATASETS='bio/colon.m bio/SRBCT.m bio/prostate.m bio/breast_2.m bio/DLCBL.m bio/breast_3.m bio/leukemia.m bio/lymphoma.m bio/Prostate_Tumor.m bio/Leukemia1.m bio/Lung_Cancer.m bio/adenocarcinoma.m bio/Brain_Tumor1.m bio/Leukemia2.m bio/brain.m bio/nci.m bio/11_Tumors.m bio/Brain_Tumor2.m bio/9_Tumors.m bio/14_Tumors.m'
+SEED=2918 
+EXPERIMENT='experiment_filter' 
+echo $EXPERIMENT
+EXTENSION='fastcla'
+CLASSIFIERS='linear_machine knn elm' # 'svm' # 'random_forest' # 
+METHODS='ranking sfs pso genetic clonalg'
+  for METHOD in $METHODS; do echo "  $METHOD"
+    for DATASET in $DATASETS; do echo $DATASET
+          OUTPUTFILE='results/'${DATASET/*\//}-${EXPERIMENT}-${METHOD}.${EXTENSION}; echo $OUTPUTFILE; 
+          echo bash matlab.bash \<\<\< "\"$EXPERIMENT('datasets/$DATASET', '$CLASSIFIERS', '$METHOD', $SEED), quit\"" \> $OUTPUTFILE > $OUTPUTFILE
+          bash matlab.bash <<< "$EXPERIMENT('datasets/$DATASET', '$CLASSIFIERS', '$METHOD', $SEED), quit" >> $OUTPUTFILE
+    done
+  done
+exit
+
+
+# random ensemble
+SEED=1 
+DATASETS='bcsfda.m' # 'bcsale.m' # 
+DATASETS='bio/colon.m bio/SRBCT.m bio/prostate.m bio/breast_2.m bio/DLCBL.m bio/breast_3.m bio/leukemia.m bio/lymphoma.m bio/Prostate_Tumor.m bio/Leukemia1.m bio/Lung_Cancer.m bio/adenocarcinoma.m bio/Brain_Tumor1.m bio/Leukemia2.m bio/brain.m bio/nci.m bio/11_Tumors.m bio/Brain_Tumor2.m bio/9_Tumors.m bio/14_Tumors.m'
+BASECLASSIFIER='knn linear_machine elm'
+bash run_re.bash "$DATASETS" $SEED $BASECLASSIFIER &
+
+# NEUROCOMPUTING
+METHODS="cascade_hybridranking_hybridsfs_genetic cascade_hybridsfs_genetic cascade_hybridranking_genetic genetic"
+CLASSIFIERS='elm(10)'
+for ROUND in {01..10}; do 
+bash run_experiment_te.bash "$METHODS" "$CLASSIFIERS" $ROUND 
+done &
+
+# CWRU
+CLASSIFIERS=knn # elm # 
+NUMSCLA='01 05 10 20'
+SEEDS=`echo {01..10}` # 
+METHODS='none ranking(fscriterion_filter) ranking cascade_ranking_genetic(fscriterion_filter) cascade_ranking_genetic genetic(fscriterion_filter) genetic'
+EXPERIMENT=experiment_cwru # 
+bash run_experiment.bash 'cwru19c' txt "$SEEDS" "knn" "$METHODS" "$NUMSCLA" false $EXPERIMENT & 
+bash run_experiment.bash 'cwru19c' txt "$SEEDS" "random_forest svm" "none" "$NUMSCLA" true $EXPERIMENT & 
+#bash run_experiment.bash cwru19c txt "$SEEDS" "$CLASSIFIERS" "$METHODS" "$NUMSCLA" false $EXPERIMENT & 
+#bash run_experiment.bash cwru7c txt "$SEEDS" "knn" "$METHODS" "$NUMSCLA" false $EXPERIMENT &; bash run_experiment.bash cwru7c txt "$SEEDS" "elm" "$METHODS" "$NUMSCLA" false $EXPERIMENT &; bash run_experiment.bash cwru7c txt "$SEEDS" "svm" "$METHODS" "$NUMSCLA" true $EXPERIMENT &; bash run_experiment.bash cwru7c txt "$SEEDS" "random_forest" "$METHODS" "$NUMSCLA" true $EXPERIMENT & 
+
+
+
+DATASETS=bcsalefda.m
+SEEDS=`echo {01..10}` # 
+CLASSIFIERS=knn # 
+METHODS='cascade_hybridranking_ranking cascade_hybridranking_hybridsfs cascade_hybridranking_sfs cascade_ranking_sfs' # cascade_ranking_genetic # cascade_ranking_pso # cascade_hybridranking_genetic # 'none ranking' #
+NUMSCLA=01
+EXPERIMENT=experiment_iround # experiment_filter # 
+bash run_experiment.bash "$DATASETS" txt "$SEEDS" "$CLASSIFIERS" "$METHODS" "$NUMSCLA" false $EXPERIMENT & 
+

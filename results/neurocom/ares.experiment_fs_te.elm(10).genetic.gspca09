@@ -1,0 +1,59 @@
+bash matlab.bash <<< setenv('LC_ALL','C'); experiment_fs_te('feature_selection_genetic', 'elm(10)', 09), quit" > results/neurocom/ares.experiment_fs_te.elm(10).genetic.gspca09
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> Classifier: ELM - Extreme Learning Machine
+
+traintime =
+
+   2.0167e+04
+
+
+used_features =
+
+  Columns 1 through 13
+
+     1     4     7    10    11    13    17    18    19    20    21    23    25
+
+  Columns 14 through 26
+
+    29    31    33    34    35    38    39    41    46    47    50    51    52
+
+
+numfeats =
+
+    26
+
+testfile time     acc      prec     rec      f1s
+d00_te.m 0.050000 1.000000 1.000000 1.000000 1.000000
+d01_te.m 0.060000 0.995833 0.995000 1.000000 0.997494
+d02_te.m 0.050000 0.973958 0.968750 1.000000 0.984127
+d04_te.m 0.060000 1.000000 1.000000 1.000000 1.000000
+d05_te.m 0.080000 0.996875 0.996250 1.000000 0.998121
+
+results =
+
+    0.0500    1.0000    1.0000    1.0000    1.0000
+    0.0600    0.9958    0.9950    1.0000    0.9975
+    0.0500    0.9740    0.9688    1.0000    0.9841
+    0.0600    1.0000    1.0000    1.0000    1.0000
+    0.0800    0.9969    0.9962    1.0000    0.9981
+
+
+averages =
+
+    0.0600    0.9933    0.9920    1.0000    0.9959
+
+
+stdevs =
+
+    0.0122    0.0110    0.0132         0    0.0067
+

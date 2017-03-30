@@ -1,0 +1,451 @@
+bash matlab.bash <<< setenv('LC_ALL','C'); experiment_fs_te2('feature_selection_cascade_hybridranking_genetic', 'elm(10)'), quit" > results/neurocom/hestia.tennessee.elm(10).cascade_hybridranking_genetic.round01
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> Classifier: ELM - Extreme Learning Machine
+
+traintime =
+
+   3.0019e+03
+
+
+used_features =
+
+  Columns 1 through 13
+
+     4    18    19    50    28    20    13    38     7    46    29    16    11
+
+  Columns 14 through 21
+
+    31    23    21    25    43    33    35    22
+
+
+numfeats =
+
+    21
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d01_te.m       21 3001.910000 0.040000 0.997917 0.997500 1.000000 0.998748
+
+traintime =
+
+  240.4700
+
+
+used_features =
+
+    10
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d02_te.m        1 240.470000 0.030000 0.986458 0.985000 0.998733 0.991819
+
+traintime =
+
+   1.7613e+03
+
+
+used_features =
+
+    40    19     7    50    13    16    39    37    18    41
+
+
+numfeats =
+
+    10
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d03_te.m       10 1761.260000 0.030000 0.555208 0.548750 0.869307 0.672797
+
+traintime =
+
+  209.0500
+
+
+used_features =
+
+    51
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d04_te.m        1 209.050000 0.030000 0.998958 0.998750 1.000000 0.999375
+
+traintime =
+
+   2.1090e+03
+
+
+used_features =
+
+    52    20    38    18    16     7    50
+
+
+numfeats =
+
+     7
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d05_te.m        7 2108.980000 0.030000 0.719792 0.673750 0.985375 0.800297
+
+traintime =
+
+  215.3700
+
+
+used_features =
+
+    44
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d06_te.m        1 215.370000 0.030000 0.997917 0.997500 1.000000 0.998748
+
+traintime =
+
+  214.1700
+
+
+used_features =
+
+    45
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d07_te.m        1 214.170000 0.060000 1.000000 1.000000 1.000000 1.000000
+
+traintime =
+
+   1.9578e+03
+
+
+used_features =
+
+    44     1    23    20    38
+
+
+numfeats =
+
+     5
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d08_te.m        5 1957.840000 0.030000 0.832292 0.798750 1.000000 0.888117
+
+traintime =
+
+   3.2712e+03
+
+
+used_features =
+
+    19    50    18     7    13    20
+
+
+numfeats =
+
+     6
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d09_te.m        6 3271.180000 0.030000 0.531250 0.482500 0.914692 0.631751
+
+traintime =
+
+  393.0200
+
+
+used_features =
+
+    19    50    18    38     7
+
+
+numfeats =
+
+     5
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d10_te.m        5 393.020000 0.030000 0.685417 0.625000 0.996016 0.768049
+
+traintime =
+
+  282.6100
+
+
+used_features =
+
+    51     9
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d11_te.m        2 282.610000 0.020000 0.809375 0.771250 1.000000 0.870854
+
+traintime =
+
+   1.7339e+03
+
+
+used_features =
+
+    50    19    20    11     7    13    31
+
+
+numfeats =
+
+     7
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d12_te.m        7 1733.850000 0.030000 0.902083 0.882500 1.000000 0.937583
+
+traintime =
+
+   1.6263e+03
+
+
+used_features =
+
+    50    18    11    34     7    13    16    21
+
+
+numfeats =
+
+     8
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d13_te.m        8 1626.270000 0.030000 0.666667 0.600000 1.000000 0.750000
+
+traintime =
+
+  289.5000
+
+
+used_features =
+
+     9    21
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d14_te.m        2 289.500000 0.020000 0.998958 0.998750 1.000000 0.999375
+
+traintime =
+
+   2.7513e+03
+
+
+used_features =
+
+    19    50    18     7    13    16    39    40
+
+
+numfeats =
+
+     8
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d15_te.m        8 2751.320000 0.020000 0.507292 0.491250 0.856209 0.624305
+
+traintime =
+
+   3.0379e+03
+
+
+used_features =
+
+    50    19    18     7    13    20
+
+
+numfeats =
+
+     6
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d16_te.m        6 3037.900000 0.030000 0.780208 0.793750 0.932452 0.857529
+
+traintime =
+
+  370.6900
+
+
+used_features =
+
+    21     9
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d17_te.m        2 370.690000 0.020000 0.947917 0.937500 1.000000 0.967742
+
+traintime =
+
+  502.9300
+
+
+used_features =
+
+     7     4    11
+
+
+numfeats =
+
+     3
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d18_te.m        3 502.930000 0.030000 0.897917 0.877500 1.000000 0.934754
+
+traintime =
+
+  367.8600
+
+
+used_features =
+
+     5    46
+
+
+numfeats =
+
+     2
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d19_te.m        2 367.860000 0.030000 0.829167 0.812500 0.978916 0.887978
+
+traintime =
+
+  511.5900
+
+
+used_features =
+
+    13    46    20     7
+
+
+numfeats =
+
+     4
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d20_te.m        4 511.590000 0.020000 0.832292 0.798750 1.000000 0.888117
+
+traintime =
+
+  222.8700
+
+
+used_features =
+
+    45
+
+
+numfeats =
+
+     1
+
+testfile numfeats trtime   tetime   acc      prec     rec      f1s
+d21_te.m        1 222.870000 0.020000 0.962500 1.000000 0.956938 0.977995
+
+d00perf =
+
+    1.0000    0.9877    0.9938
+    0.9938    0.9298    0.9607
+    0.5875    0.2066    0.3057
+    1.0000    0.9938    0.9969
+    0.9500    0.3680    0.5305
+    1.0000    0.9877    0.9938
+    1.0000    1.0000    1.0000
+    1.0000    0.4984    0.6653
+    0.7750    0.2305    0.3553
+    0.9875    0.3450    0.5113
+    1.0000    0.4665    0.6362
+    1.0000    0.6299    0.7729
+    1.0000    0.3333    0.5000
+    1.0000    0.9938    0.9969
+    0.5875    0.1876    0.2844
+    0.7125    0.4086    0.5194
+    1.0000    0.7619    0.8649
+    1.0000    0.6202    0.7656
+    0.9125    0.4932    0.6404
+    1.0000    0.4984    0.6653
+    0.7750    1.0000    0.8732
+
+
+d00avg =
+
+    0.9182    0.6162    0.7063
+
+
+d00std =
+
+    0.9182    0.6162    0.7063
+
+
+results =
+
+   1.0e+03 *
+
+    0.0210    3.0019    0.0000    0.0010    0.0010    0.0010    0.0010
+    0.0010    0.2405    0.0000    0.0010    0.0010    0.0010    0.0010
+    0.0100    1.7613    0.0000    0.0006    0.0005    0.0009    0.0007
+    0.0010    0.2091    0.0000    0.0010    0.0010    0.0010    0.0010
+    0.0070    2.1090    0.0000    0.0007    0.0007    0.0010    0.0008
+    0.0010    0.2154    0.0000    0.0010    0.0010    0.0010    0.0010
+    0.0010    0.2142    0.0001    0.0010    0.0010    0.0010    0.0010
+    0.0050    1.9578    0.0000    0.0008    0.0008    0.0010    0.0009
+    0.0060    3.2712    0.0000    0.0005    0.0005    0.0009    0.0006
+    0.0050    0.3930    0.0000    0.0007    0.0006    0.0010    0.0008
+    0.0020    0.2826    0.0000    0.0008    0.0008    0.0010    0.0009
+    0.0070    1.7339    0.0000    0.0009    0.0009    0.0010    0.0009
+    0.0080    1.6263    0.0000    0.0007    0.0006    0.0010    0.0007
+    0.0020    0.2895    0.0000    0.0010    0.0010    0.0010    0.0010
+    0.0080    2.7513    0.0000    0.0005    0.0005    0.0009    0.0006
+    0.0060    3.0379    0.0000    0.0008    0.0008    0.0009    0.0009
+    0.0020    0.3707    0.0000    0.0009    0.0009    0.0010    0.0010
+    0.0030    0.5029    0.0000    0.0009    0.0009    0.0010    0.0009
+    0.0020    0.3679    0.0000    0.0008    0.0008    0.0010    0.0009
+    0.0040    0.5116    0.0000    0.0008    0.0008    0.0010    0.0009
+    0.0010    0.2229    0.0000    0.0010    0.0010    0.0010    0.0010
+
+
+averages =
+
+   1.0e+03 *
+
+    0.0049    1.1938    0.0000    0.0008    0.0008    0.0010    0.0009
+
+
+stdevs =
+
+   1.0e+03 *
+
+    0.0046    1.1172    0.0000    0.0002    0.0002    0.0000    0.0001
+

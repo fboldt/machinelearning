@@ -1,0 +1,85 @@
+bash matlab.bash <<< "experiment_cwru('datasets/cwru7u', 'svm', 'none', 01, 05, true), quit" > results/cwru7u-experiment_cwru-none-01svm-attrue.txt05
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> nofs
+fold-01: 0.425934
+confold: 1,2,0,0,0,0,10,3
+confold: 1,0,5,0,2,0,8,0
+confold: 1,0,0,0,0,0,10,5
+confold: 1,0,2,0,1,0,11,1
+confold: 1,0,0,0,0,5,0,0
+confold: 1,0,1,0,12,0,22,0
+confold: 1,0,3,0,0,0,22,5
+fold-02: 0.594227
+confold: 2,10,0,0,0,0,0,5
+confold: 2,0,2,0,0,0,13,0
+confold: 2,0,0,0,0,0,13,2
+confold: 2,0,0,0,0,0,10,5
+confold: 2,0,0,0,0,5,0,0
+confold: 2,0,0,0,0,0,33,2
+confold: 2,0,0,0,0,0,13,12
+fold-03: 0.502084
+confold: 3,10,0,0,1,0,1,3
+confold: 3,2,5,0,1,0,5,2
+confold: 3,4,0,0,0,0,11,0
+confold: 3,0,0,0,0,0,9,6
+confold: 3,0,0,0,0,5,0,0
+confold: 3,1,0,0,1,0,28,5
+confold: 3,5,0,0,4,0,10,6
+fold-04: 0.539550
+confold: 4,13,0,0,0,0,1,1
+confold: 4,0,1,0,0,0,3,11
+confold: 4,3,0,0,0,0,8,4
+confold: 4,2,0,0,0,0,6,7
+confold: 4,0,0,0,0,5,0,0
+confold: 4,1,0,0,0,0,24,10
+confold: 4,11,0,0,0,0,5,9
+
+results =
+
+    0.4259    0.5942    0.5021    0.5396
+
+
+totaltime =
+
+   5.8531e+03
+
+
+confusion =
+
+    35     0     0     1     0    12    12
+     2    13     0     3     0    29    13
+     7     0     0     0     0    42    11
+     2     2     0     1     0    36    19
+     0     0     0     0    20     0     0
+     2     1     0    13     0   107    17
+    16     3     0     4     0    50    32
+
+
+trtime =
+
+   1.0e+03 *
+
+    1.0544    1.5313    1.7708    1.4957
+
+
+tetime =
+
+    0.0500    0.0500    0.0500    0.0500
+
+
+numfeats =
+
+   306
+
+meanperf    std_perf    meanfeat    std_feat    trtime      stdtrti     tetime    stdteti
+0.515449    0.070660    306.000000    0.000000    1463.050000    298.598638    0.050000    0.000000

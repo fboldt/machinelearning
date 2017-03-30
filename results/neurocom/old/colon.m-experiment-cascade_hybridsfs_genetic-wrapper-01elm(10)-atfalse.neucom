@@ -1,0 +1,13 @@
+bash matlab.bash <<< "experiment('datasets/bio/colon.m', 'elm(10)', 'cascade_hybridsfs_genetic', 'wrapper', 01, 2918, false), quit" > results/colon.m-experiment-cascade_hybridsfs_genetic-wrapper-01elm(10)-atfalse.neucom
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> cascade_hybridsfs_genetic
+round  1 -> seed: 9839 | 

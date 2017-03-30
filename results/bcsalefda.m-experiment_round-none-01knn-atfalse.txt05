@@ -1,0 +1,124 @@
+bash matlab.bash <<< "experiment_round('datasets/bcsalefda.m', 'knn', 'none', 01, 05, false), quit" > results/bcsalefda.m-experiment_round-none-01knn-atfalse.txt05
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> nofs
+fold-01: 0.780357
+confold: 1,361,4,0,5,1
+confold: 1,4,44,0,0,1
+confold: 1,1,0,4,0,0
+confold: 1,2,0,0,1,0
+confold: 1,5,0,0,0,24
+fold-02: 0.812540
+confold: 2,363,3,0,0,5
+confold: 2,2,44,2,0,0
+confold: 2,1,0,4,0,0
+confold: 2,3,0,0,1,0
+confold: 2,5,0,0,0,24
+fold-03: 0.747914
+confold: 3,362,7,0,1,1
+confold: 3,7,38,2,0,1
+confold: 3,1,0,3,1,0
+confold: 3,2,0,0,2,0
+confold: 3,6,0,0,0,23
+fold-04: 0.809012
+confold: 4,356,9,1,3,2
+confold: 4,5,43,0,0,0
+confold: 4,1,0,4,0,0
+confold: 4,2,0,0,2,0
+confold: 4,0,0,0,0,29
+fold-05: 0.715458
+confold: 5,362,2,1,3,3
+confold: 5,2,46,0,0,0
+confold: 5,2,1,2,0,0
+confold: 5,3,0,0,1,0
+confold: 5,4,0,0,0,25
+fold-06: 0.804892
+confold: 6,364,2,1,4,0
+confold: 6,3,45,0,0,0
+confold: 6,0,0,5,0,0
+confold: 6,3,0,0,1,0
+confold: 6,1,1,0,0,27
+fold-07: 0.763967
+confold: 7,361,6,0,2,1
+confold: 7,2,47,0,0,0
+confold: 7,2,0,3,0,0
+confold: 7,1,0,1,1,0
+confold: 7,4,0,0,0,26
+fold-08: 0.854804
+confold: 8,357,5,2,0,6
+confold: 8,8,41,0,0,0
+confold: 8,1,0,4,0,0
+confold: 8,1,0,0,2,0
+confold: 8,2,0,0,0,28
+fold-09: 0.694634
+confold: 9,362,6,0,0,2
+confold: 9,6,43,0,0,0
+confold: 9,2,0,2,1,0
+confold: 9,3,0,0,0,0
+confold: 9,0,1,0,0,29
+fold-10: 0.821115
+confold: 10,361,4,0,3,2
+confold: 10,3,46,0,0,0
+confold: 10,1,1,3,0,0
+confold: 10,1,0,0,2,0
+confold: 10,5,0,0,0,25
+
+results =
+
+    0.7804
+    0.8125
+    0.7479
+    0.8090
+    0.7155
+    0.8049
+    0.7640
+    0.8548
+    0.6946
+    0.8211
+
+
+totaltime =
+
+    4.3400
+
+
+confusion =
+
+        3609          48           5          21          23
+          42         437           4           0           2
+          12           2          34           2           0
+          21           0           1          13           0
+          32           2           0           0         260
+
+
+trtime =
+
+     0     0     0     0     0     0     0     0     0     0
+
+
+tetime =
+
+  Columns 1 through 7
+
+    0.4800    0.3000    0.2800    0.4300    0.3600    0.4200    0.3500
+
+  Columns 8 through 10
+
+    0.3500    0.3700    0.2700
+
+
+numfeats =
+
+    20
+
+meanperf    std_perf    meanfeat    std_feat    trtime      stdtrti     tetime    stdteti
+0.780469    0.050049    20.000000    0.000000    0.000000    0.000000    0.361000    0.067733

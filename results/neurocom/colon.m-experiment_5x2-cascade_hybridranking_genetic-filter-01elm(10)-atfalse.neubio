@@ -1,0 +1,4446 @@
+bash matlab.bash <<< "experiment_5x2('datasets/bio/colon.m', 'elm(10)', 'cascade_hybridranking_genetic', 'filter', 01, 2918, false), quit" > results/colon.m-experiment_5x2-cascade_hybridranking_genetic-filter-01elm(10)-atfalse.neubio
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Executing 'startup.m'
+>> cascade_hybridranking_genetic
+round  1 -> seed: 9839 | perf: 0.851458, time: 722.660000
+round  2 -> seed: 2385 | perf: 0.717014, time: 799.230000
+round  3 -> seed:  867 | perf: 0.859091, time: 825.990000
+round  4 -> seed: 3976 | perf: 0.826710, time: 731.590000
+round  5 -> seed: 9026 | perf: 0.876527, time: 973.230000
+
+results =
+
+    0.8967    0.7439    0.7886    0.8048    0.9320
+    0.8062    0.6902    0.9295    0.8486    0.8210
+
+
+confusion = 
+
+  Columns 1 through 4
+
+    [2x2 double]    [2x2 double]    [2x2 double]    [2x2 double]
+
+  Column 5
+
+    [2x2 double]
+
+
+trtimes = 
+
+    [441.2000]    [318.8000]    [261.7900]    [482.1900]    [651.4400]
+    [281.0500]    [480.3000]    [564.0900]    [249.2900]    [321.6600]
+
+
+tetimes = 
+
+    [0.0700]    [0.0400]    [0.0400]    [0.0600]    [0.0500]
+    [0.0400]    [0.0800]    [0.0600]    [0.0400]    [0.0400]
+
+
+trcla = 
+
+  Columns 1 through 4
+
+    [1x1 struct]    [1x1 struct]    [1x1 struct]    [1x1 struct]
+    [1x1 struct]    [1x1 struct]    [1x1 struct]    [1x1 struct]
+
+  Column 5
+
+    [1x1 struct]
+    [1x1 struct]
+
+
+ans =
+
+  Columns 1 through 6
+
+        1635         625        1679         493        1360         249
+
+  Columns 7 through 12
+
+        1625          49         245        1771         377         267
+
+  Columns 13 through 18
+
+         564        1347         529        1772         489         765
+
+  Columns 19 through 24
+
+        1406         964        1924        1583        1547         822
+
+  Columns 25 through 30
+
+        1843        1892        1423        1668        1366        1456
+
+  Columns 31 through 36
+
+        1839        1353        1042        1285         345        1960
+
+  Columns 37 through 42
+
+        1549        1495        1091         897         739        1836
+
+  Columns 43 through 48
+
+         792        1884        1574        1511         138         419
+
+  Columns 49 through 54
+
+        1013         812         732         548          70         627
+
+  Columns 55 through 60
+
+          66         802         391         350         137        1244
+
+  Columns 61 through 66
+
+        1671        1348          14        1887         513        1325
+
+  Columns 67 through 72
+
+        1983        1398         111        1582        1965         415
+
+  Columns 73 through 78
+
+        1210        1386        1985        1411         709         609
+
+  Columns 79 through 84
+
+        1651        1963        1094        1534         281        1387
+
+  Columns 85 through 90
+
+         143        1196         201        1946         295        1110
+
+  Columns 91 through 96
+
+        1247         892         761        1293        1473        1372
+
+  Columns 97 through 102
+
+         576          55          42          41          40          39
+
+  Columns 103 through 108
+
+        1634        1998        1560        1224         411        1573
+
+  Columns 109 through 114
+
+         546         824        1022         570         780         622
+
+  Columns 115 through 120
+
+         910         826        1466        1153         520        1713
+
+  Columns 121 through 126
+
+        1494        1200        1168        1579          59        1472
+
+  Columns 127 through 132
+
+         286          32          43         266         979         102
+
+  Columns 133 through 138
+
+         982        1060        1491         581         860        1824
+
+  Columns 139 through 144
+
+        1897          67         830        1811        1231          78
+
+  Columns 145 through 150
+
+        1730        1288        1838         882        1395         273
+
+  Columns 151 through 156
+
+         669        1438        1959         621         853         125
+
+  Columns 157 through 162
+
+         785        1605         994         198        1597        1648
+
+  Columns 163 through 168
+
+         807         437        1319        1256         189         636
+
+  Columns 169 through 174
+
+        1223        1260        1680        1570         317         989
+
+  Columns 175 through 180
+
+         791        1380         235          62        1939         689
+
+  Columns 181 through 186
+
+        1608          75        1982         722        1370         365
+
+  Columns 187 through 192
+
+        1485        1115        1211         665         772         276
+
+  Columns 193 through 198
+
+        1006         399        1071        1867        1334        1650
+
+  Columns 199 through 204
+
+          44         169        1263        1672         679         221
+
+  Columns 205 through 210
+
+         123         953        1674         187        1067        1294
+
+  Columns 211 through 216
+
+        1935        1451         734         196         619          26
+
+  Columns 217 through 222
+
+        1900        1351         395        1346        1227        1991
+
+  Columns 223 through 228
+
+         559         571         561          83        1129        1550
+
+  Columns 229 through 234
+
+        1675        1452        1221         818        1917         241
+
+  Columns 235 through 240
+
+        1058        1489        1875        1673         813        1537
+
+  Columns 241 through 246
+
+        1564        1400        1414         992         681          31
+
+  Columns 247 through 252
+
+        1501        1942        1027         929         601         495
+
+  Columns 253 through 258
+
+        1306        1967        1566         157        1759         264
+
+  Columns 259 through 264
+
+        1541         652        1413        1642        1421          23
+
+  Columns 265 through 270
+
+        1281        1611        1833         959        1007         343
+
+  Columns 271 through 276
+
+         737         190        1907         803         614        1546
+
+  Columns 277 through 282
+
+         834        1986         766         414        1912         211
+
+  Columns 283 through 288
+
+         458        1555        1870         444         331        1758
+
+  Columns 289 through 294
+
+        1107         188        1119        1289        1974         699
+
+  Columns 295 through 300
+
+         817        1972        1047         229         549         451
+
+  Columns 301 through 306
+
+         814         980        1480         629        1698        1147
+
+  Columns 307 through 312
+
+         127         554         453        1039        1943         348
+
+  Columns 313 through 318
+
+         617        1724         242        1601         890        1136
+
+  Columns 319 through 324
+
+         666         300        1859          52          50          51
+
+  Columns 325 through 330
+
+          53         648         422        1542        1697        1154
+
+  Columns 331 through 336
+
+        1761        1797         293         347         645         806
+
+  Columns 337 through 342
+
+         838        1810         275         712        1842         462
+
+  Columns 343 through 348
+
+        1002         359        1886         638        1248        1637
+
+  Columns 349 through 354
+
+        1097        1536         698        1048        1879        1780
+
+  Columns 355 through 360
+
+        1126        1652        1623        1440        1004        1692
+
+  Columns 361 through 366
+
+         779         663        1997         769         863        1644
+
+  Columns 367 through 372
+
+         194         141         735          80         600        1746
+
+  Columns 373 through 378
+
+        1324          45          86         199        1447        1296
+
+  Columns 379 through 384
+
+        1610         166         447         923        1669        1291
+
+  Columns 385 through 390
+
+         831         932         936         847        1783        1899
+
+  Columns 391 through 396
+
+         661        1871        1186         919        1563        1003
+
+  Columns 397 through 402
+
+         172          91        1894        1763        1799         321
+
+  Columns 403 through 408
+
+         105        1659         639        1508        1049         110
+
+  Columns 409 through 414
+
+         282        1548         767         279         119        1873
+
+  Columns 415 through 420
+
+        1063        1938        1932        1510        1530          72
+
+  Columns 421 through 426
+
+         883         309        1181        1062         557        1779
+
+  Columns 427 through 432
+
+         725         326        1326        1630        1589        1328
+
+  Columns 433 through 438
+
+         840        1562        1264         284        1074         228
+
+  Columns 439 through 444
+
+        1337         351         124         436        1061        1209
+
+  Columns 445 through 450
+
+         553         481         472        1342        1101        1920
+
+  Columns 451 through 456
+
+        1279         674        1401          96        1241        1532
+
+  Columns 457 through 462
+
+         181        1904        1826         642        1416        1139
+
+  Columns 463 through 468
+
+        1340         862        1919        1073          82         428
+
+  Columns 469 through 474
+
+         482         904         259        1993          16        1722
+
+  Columns 475 through 480
+
+        1710        1951         112         618         939          47
+
+  Columns 481 through 486
+
+        1770         361         941         504        1902         686
+
+  Columns 487 through 492
+
+        1021         507        1286        1808         344         839
+
+  Columns 493 through 498
+
+         450         278        1916         574        1795        1526
+
+  Columns 499 through 504
+
+        1599        1187         805        1729        1613        1243
+
+  Columns 505 through 510
+
+        1948        1076        1194         608        1804         523
+
+  Columns 511 through 516
+
+         885         518         322        1096        1444        1775
+
+  Columns 517 through 522
+
+         957        1111         790        1217         563         210
+
+  Columns 523 through 528
+
+        1895        1208         339        1498         540         640
+
+  Columns 529 through 534
+
+         591         180         937         866         311        1516
+
+  Columns 535 through 540
+
+        1394         721        1175        1170         448        1141
+
+  Columns 541 through 546
+
+         440        1978        1827         832        1814        1167
+
+  Columns 547 through 552
+
+        1099        1258         247          84        1034         584
+
+  Columns 553 through 558
+
+         884        1176         505        1756         277         966
+
+  Columns 559 through 564
+
+          88        1666         670        1197        1100         550
+
+  Columns 565 through 570
+
+         825         354        1767        1350         164         527
+
+  Columns 571 through 576
+
+         191          13         680         635        1046         304
+
+  Columns 577 through 582
+
+        1053         213         692        1504        1851         515
+
+  Columns 583 through 588
+
+         624         934         128        1439          34        1165
+
+  Columns 589 through 594
+
+         632         375        1620         634         960         988
+
+  Columns 595 through 600
+
+        1448         186        1878        1915        1239        1313
+
+  Columns 601 through 606
+
+        1465         900        1581          54         514         682
+
+  Columns 607 through 612
+
+         809        1754         531         270         467        1069
+
+  Columns 613 through 618
+
+         931         958         811         695        1803         615
+
+  Columns 619 through 624
+
+        1246        1614        1425        1640         758        1649
+
+  Columns 625 through 630
+
+        1381        1056        1043         473         685        1461
+
+  Columns 631 through 636
+
+          99         918         869         764         294         208
+
+  Columns 637 through 642
+
+         993         100         538          56        1592         226
+
+  Columns 643 through 648
+
+         815         590        1005        1454         750         469
+
+  Columns 649 through 654
+
+        1969         248        1017        1482         728         907
+
+  Columns 655 through 660
+
+        1531        1189         801         875         795         224
+
+  Columns 661 through 666
+
+         787         704        1707          85         503         484
+
+  Columns 667 through 672
+
+         654         477          57         572        1415          64
+
+  Columns 673 through 678
+
+         349        1215         555        1726         237        1500
+
+  Columns 679 through 684
+
+        1332        1732         893        1235         283         566
+
+  Columns 685 through 690
+
+        1222         183         341         104         332         117
+
+  Columns 691 through 696
+
+        1913        1396         719        1125        1798         978
+
+  Columns 697 through 702
+
+        1135        1160         837        1784        1033         694
+
+  Columns 703 through 708
+
+         535         965          87         165        1949         425
+
+  Columns 709 through 714
+
+          76        1059        1020        1362         329         595
+
+  Columns 715 through 720
+
+         976        1593        1612        1199        1641         594
+
+  Columns 721 through 726
+
+         799        1896         374          36         142         782
+
+  Columns 727 through 732
+
+        1865         163         967         420        1918          48
+
+  Columns 733 through 738
+
+        1108         413         586         738         173         488
+
+  Columns 739 through 744
+
+        1064         981         544        1690         662        1123
+
+  Columns 745 through 750
+
+        1617         788         605         429        1311         145
+
+  Columns 751 through 756
+
+        1367        1616         611        1866        1819         753
+
+  Column 757
+
+        1631
+
+
+ans =
+
+  Columns 1 through 6
+
+         493         377         765         249         267         897
+
+  Columns 7 through 12
+
+         513        1635        1423        1730          26         245
+
+  Columns 13 through 18
+
+        1867        1884         780        1873         918        1494
+
+  Columns 19 through 24
+
+         187        1772         138        1614         100        1900
+
+  Columns 25 through 30
+
+        1671        1897         365         286        1674        1771
+
+  Columns 31 through 36
+
+         241         495         739         571          67        1582
+
+  Columns 37 through 42
+
+        1843        1387        1256        1060        1208          62
+
+  Columns 43 through 48
+
+         181        1263        1648         824         147          66
+
+  Columns 49 through 54
+
+        1451         992        1042        1770         662         550
+
+  Columns 55 through 60
+
+         137         581         127        1231         822        1411
+
+  Columns 61 through 66
+
+         411         964        1111         625        1247         994
+
+  Columns 67 through 72
+
+         323        1002         806         802        1073          14
+
+  Columns 73 through 78
+
+        1659         812          85         299        1414         515
+
+  Columns 79 through 84
+
+         190         111        1484          47        1421         107
+
+  Columns 85 through 90
+
+         399        1258        1194         199        1974          60
+
+  Columns 91 through 96
+
+          31         141         164          91        1031        1785
+
+  Columns 97 through 102
+
+          43         830        1808        1334          86         221
+
+  Columns 103 through 108
+
+        1728        1904        1406        1489        1699         444
+
+  Columns 109 through 114
+
+        1472        1546         520         415        1286        1634
+
+  Columns 115 through 120
+
+         451        1894          16        1549        1967         882
+
+  Columns 121 through 126
+
+        1912        1993        1058        1761         391        1877
+
+  Columns 127 through 132
+
+        1209        1511        1168         561        1917        1960
+
+  Columns 133 through 138
+
+        1504        1282        1943         257         134        1314
+
+  Columns 139 through 144
+
+        1153        1293         201        1280        1156        1970
+
+  Columns 145 through 150
+
+         519         453         737         360        1047         652
+
+  Columns 151 through 156
+
+        1836        1870        1816        1872         517        1550
+
+  Columns 157 through 162
+
+         866         538          72        1920        1365         251
+
+  Columns 163 through 168
+
+         989          88         784        1227        1493        1526
+
+  Columns 169 through 174
+
+        1892         847         500        1110        1649         619
+
+  Columns 175 through 180
+
+        1429        1272        1791        1288        1886        1810
+
+  Columns 181 through 186
+
+        1623         212         758          75        1581        1372
+
+  Columns 187 through 192
+
+        1187         166         701         582        1641        1675
+
+  Columns 193 through 198
+
+         440          37         807          49        1972        1181
+
+  Columns 199 through 204
+
+        1340          39          41          42          40        1989
+
+  Columns 205 through 210
+
+         359        1285         572         118         726        1326
+
+  Columns 211 through 216
+
+         325         892        1813        1221         779        1381
+
+  Columns 217 through 222
+
+        1248         601          32         293         504        1197
+
+  Columns 223 through 228
+
+        1067        1115         916         427         895        1260
+
+  Columns 229 through 234
+
+         972         549         732        1724         634        1398
+
+  Columns 235 through 240
+
+         467        1378         893         539         639         534
+
+  Columns 241 through 246
+
+         950        1839         976         993        1332         567
+
+  Columns 247 through 252
+
+         579         843        1514         591        1328         610
+
+  Columns 253 through 258
+
+         958        1113         334         145         839        1259
+
+  Columns 259 through 264
+
+         437        1775         523        1032        1048        1473
+
+  Columns 265 through 270
+
+          70         698         940        1887         846        1331
+
+  Columns 271 through 276
+
+        1004         248         648        1657         834         787
+
+  Columns 277 through 282
+
+         446        1672         143        1637         929          54
+
+  Columns 283 through 288
+
+        1871        1764        1750        1982        1732         817
+
+  Columns 289 through 294
+
+        1666        1798        1145        1346         663         389
+
+  Columns 295 through 300
+
+         644        1734        1987         527          13        1915
+
+  Columns 301 through 306
+
+          99        1471         395         932        1199        1959
+
+  Columns 307 through 312
+
+         785        1466        1418         283         694        1416
+
+  Columns 313 through 318
+
+        1668          11        1163        1534        1555         809
+
+  Columns 319 through 324
+
+         949         731        1120         105        1644         202
+
+  Columns 325 through 330
+
+        1447         264        1439         794        1902        1765
+
+  Columns 331 through 336
+
+        1119        1786         979        1576        1502         980
+
+  Columns 337 through 342
+
+         935         704         636        1924         576         622
+
+  Columns 343 through 348
+
+         611        1367        1039         910        1515         774
+
+  Columns 349 through 354
+
+        1878         617        1874        1010         791        1142
+
+  Columns 355 through 360
+
+        1832         135         288        1325        1573        1599
+
+  Columns 361 through 366
+
+         315        1313         831        1822         271         679
+
+  Columns 367 through 372
+
+        1567        1896        1308        1035        1082         570
+
+  Columns 373 through 378
+
+        1946        1918         759        1669         557         792
+
+  Columns 379 through 384
+
+         931        1568         706        1727         426         397
+
+  Columns 385 through 390
+
+          95        1660        1100         165         183         832
+
+  Columns 391 through 396
+
+        1487        1643        1560        1075        1608        1826
+
+  Columns 397 through 402
+
+        1799         627        1028         329          20         716
+
+  Columns 403 through 408
+
+          18          51          50          53          52         745
+
+  Columns 409 through 414
+
+         936        1003        1570        1124         139        1911
+
+  Columns 415 through 420
+
+        1213        1433        1758        1235        1244        1063
+
+  Columns 421 through 426
+
+         767        1885         547         796         934        1856
+
+  Columns 427 through 432
+
+         343         836        1452        1757        1751        1812
+
+  Columns 433 through 438
+
+        1064          46         973        1580        1533        1716
+
+  Columns 439 through 444
+
+         461        1863         369         295        1664        1901
+
+  Columns 445 through 450
+
+         877        1556        1548         568        1935         281
+
+  Columns 451 through 456
+
+          93        1841        1801        1366         545         512
+
+  Columns 457 through 462
+
+        1469         345         211        1964        1319        1321
+
+  Columns 463 through 468
+
+        1583         120        1516         354        1182         173
+
+  Columns 469 through 474
+
+        1159         766         203         763         136        1252
+
+  Columns 475 through 480
+
+        1053        1436         469        1746        1413        1355
+
+  Columns 481 through 486
+
+          56         885        1694          58         740        1076
+
+  Columns 487 through 492
+
+        1500        1601         941        1134         468        1794
+
+  Columns 493 through 498
+
+        1680        1043        1210        1622        1442        1985
+
+  Columns 499 through 504
+
+         182         102         656         507         163         210
+
+  Columns 505 through 510
+
+         413        1955         252        1513        1251        1795
+
+  Columns 511 through 516
+
+        1642        1428        1834        1929        1961         258
+
+  Columns 517 through 522
+
+         449         961         632         840        1709        1106
+
+  Columns 523 through 528
+
+        1394        1374         482        1189         564         228
+
+  Columns 529 through 534
+
+         600        1380          15         683         554         856
+
+  Columns 535 through 540
+
+         823         335         235         188        1981         920
+
+  Column 541
+
+        1715
+
+
+ans =
+
+  Columns 1 through 6
+
+         377         625         493         391          66        1679
+
+  Columns 7 through 12
+
+         249        1423         138         679         802        1406
+
+  Columns 13 through 18
+
+         267        1965         245        1511         513         982
+
+  Columns 19 through 24
+
+        1635         830         822         765        1042         489
+
+  Columns 25 through 30
+
+         111        1998        1110        1839         785         198
+
+  Columns 31 through 36
+
+         102        1917        1943         187         571         295
+
+  Columns 37 through 42
+
+        1472        1668        1867          14        1510         780
+
+  Columns 43 through 48
+
+         440         897         419         365         964        1771
+
+  Columns 49 through 54
+
+        1223          49         529        1960        1281        1583
+
+  Columns 55 through 60
+
+        1560         636         686        1611        1325        1058
+
+  Columns 61 through 66
+
+         520        1537         137        1286         953        1068
+
+  Columns 67 through 72
+
+         415        1897         361         411         813        1168
+
+  Columns 73 through 78
+
+          75        1456        1360        1730         834         495
+
+  Columns 79 through 84
+
+         282        1699         281        1946        1770         273
+
+  Columns 85 through 90
+
+         241         199        1413         437        1194        1582
+
+  Columns 91 through 96
+
+         190         824        1651        1671         141        1698
+
+  Columns 97 through 102
+
+        1648        1263         812         453         634        1414
+
+  Columns 103 through 108
+
+        1073        1256        1209         570         818        1372
+
+  Columns 109 through 114
+
+         609         994        1843        1288         699        1758
+
+  Columns 115 through 120
+
+         739          72        1013         581         561        1387
+
+  Columns 121 through 126
+
+        1967        1884         932         614         862         143
+
+  Columns 127 through 132
+
+        1494        1491        1411        1285         992        1836
+
+  Columns 133 through 138
+
+        1574        1119        1227        1010        1258        1674
+
+  Columns 139 through 144
+
+        1997         345         286         564         619         882
+
+  Columns 145 through 150
+
+          31        1022        1514        1136        1675        1147
+
+  Columns 151 through 156
+
+        1403        1601        1347        1772         548         929
+
+  Columns 157 through 162
+
+         284        1887         210        1549         110         639
+
+  Columns 163 through 168
+
+          86          96        1224        1879          23         893
+
+  Columns 169 through 174
+
+        1334        1306         806         979        1283        1900
+
+  Columns 175 through 180
+
+        1974        1447        1875         447        1438         617
+
+  Columns 181 through 186
+
+        1213        1094        1803         343        1314         910
+
+  Columns 187 through 192
+
+        1181         189        1904        1319        1115        1416
+
+  Columns 193 through 198
+
+         321         242        1634        1546        1060        1799
+
+  Columns 199 through 204
+
+         989         939         359        1824        1108         550
+
+  Columns 205 through 210
+
+        1439        1526        1111         621          67         622
+
+  Columns 211 through 216
+
+         482        1293        1907          32        1816        1006
+
+  Columns 217 through 222
+
+        1516         100          91         890          62         344
+
+  Columns 223 through 228
+
+        1032         515        1002        1550        1235        1924
+
+  Columns 229 through 234
+
+        1566        1761         610         523        1328        1231
+
+  Columns 235 through 240
+
+        1547         201        1067         264        1811        1614
+
+  Columns 241 through 246
+
+        1716         767         157         127         817        1982
+
+  Columns 247 through 252
+
+        1892        1063        1692         469        1381         450
+
+  Columns 253 through 258
+
+        1353        1366        1963        1972        1652         698
+
+  Columns 259 through 264
+
+          26        1573         681         748         348        1386
+
+  Columns 265 through 270
+
+        1187         576        1955         839        1100         169
+
+  Columns 271 through 276
+
+        1247        1935        1579        1248        1808         826
+
+  Columns 277 through 282
+
+        1795         272         527        1272        1599        1260
+
+  Columns 283 through 288
+
+        1489         918         559        1091         279         404
+
+  Columns 289 through 294
+
+         428          40          39          42         547         334
+
+  Columns 295 through 300
+
+        1672        1211        1985         119        1394        1047
+
+  Columns 301 through 306
+
+         980         207        1026         147        1244        1501
+
+  Columns 307 through 312
+
+         601        1308         317        1533        1064         665
+
+  Columns 313 through 318
+
+        1398        1380        1680        1023          16         892
+
+  Columns 319 through 324
+
+        1170         973         732        1400        1942        1208
+
+  Columns 325 through 330
+
+        1938          85        1751        1153         709         960
+
+  Columns 331 through 336
+
+          18         507          43        1053        1482        1421
+
+  Columns 337 through 342
+
+         181         389        1210         259          46        1534
+
+  Columns 343 through 348
+
+         226        1014         803        1139          45         276
+
+  Columns 349 through 354
+
+         652          36        1724         211          88         662
+
+  Columns 355 through 360
+
+         399         661         657        1697         811        1473
+
+  Columns 361 through 366
+
+        1597        1912         220         308          76        1642
+
+  Columns 367 through 372
+
+         283         900        1715         318         538         510
+
+  Columns 373 through 378
+
+        1326        1555        1548        1338        1664        1451
+
+  Columns 379 through 384
+
+        1048        1722         217         791        1983        1778
+
+  Columns 385 through 390
+
+         442         221        1480         704         293        1650
+
+  Columns 391 through 396
+
+          44        1959        1561        1145        1515        1710
+
+  Columns 397 through 402
+
+          64        1871        1199         237         956         866
+
+  Columns 403 through 408
+
+         666         667         313          70         958         674
+
+  Columns 409 through 414
+
+        1623         208         611        1264         935         105
+
+  Columns 415 through 420
+
+         248        1870        1377         648         853        1630
+
+  Columns 421 through 426
+
+        1101        1873         719        1186         270         350
+
+  Columns 427 through 432
+
+         766        1763         860        1135        1812        1920
+
+  Columns 433 through 438
+
+         164         125         554        1746        1898         604
+
+  Columns 439 through 444
+
+        1508        1727        1062         779         819        1991
+
+  Columns 445 through 450
+
+         222         792        1644         737         213        1059
+
+  Columns 451 through 456
+
+         338        1046        1259         640         296        1524
+
+  Columns 457 through 462
+
+         725         484        1523        1621         444         544
+
+  Columns 463 through 468
+
+         326         567        1951        1487        1918        1069
+
+  Columns 469 through 474
+
+        1831        1631        1620         357        1495         836
+
+  Columns 475 through 480
+
+         194        1340         107         656        1659        1327
+
+  Columns 481 through 486
+
+        1878         654         553        1785         624         756
+
+  Columns 487 through 492
+
+         224        1280         764         787         884         931
+
+  Columns 493 through 498
+
+         874        1346         694         129         876        1798
+
+  Columns 499 through 504
+
+        1039        1138        1167         896        1804         166
+
+  Columns 505 through 510
+
+        1295        1866         669        1786         790         961
+
+  Columns 511 through 516
+
+        1196        1838         331        1739        1298        1919
+
+  Columns 517 through 522
+
+        1504         383         959         745        1613        1535
+
+  Columns 523 through 528
+
+         467        1570        1567         572        1350          54
+
+  Columns 529 through 534
+
+         761        1673        1593        1106          60        1865
+
+  Columns 535 through 540
+
+        1466         938         299         254        1695         936
+
+  Columns 541 through 546
+
+        1037         546         499        1744         167         476
+
+  Columns 547 through 552
+
+          83          56        1230         477        1279        1005
+
+  Columns 553 through 558
+
+        1192        1103         123         300         135        1542
+
+  Columns 559 through 564
+
+        1427        1052         883         875          21        1859
+
+  Columns 565 through 570
+
+        1027         585          92         461         843         104
+
+  Columns 571 through 576
+
+         388        1496         557        1221         537        1017
+
+  Columns 577 through 582
+
+        1436        1797        1294        1348         627         580
+
+  Columns 583 through 588
+
+         549        1240         955         738        1970         212
+
+  Columns 589 through 594
+
+        1061         216        1125        1273        1034        1930
+
+  Columns 595 through 600
+
+         173        1444        1417        1858         969        1666
+
+  Columns 601 through 606
+
+         772        1800         118        1876        1605         607
+
+  Columns 607 through 612
+
+         911         831        1545        1993        1939         512
+
+  Columns 613 through 618
+
+         136         993         165        1728         196         386
+
+  Columns 619 through 624
+
+        1370        1166        1401         103        1143         323
+
+  Column 625
+
+         329
+
+
+ans =
+
+  Columns 1 through 6
+
+         493        1635        1772         249        1884        1494
+
+  Columns 7 through 12
+
+        1581        1843         739         897        1892        1060
+
+  Columns 13 through 18
+
+        1423         451          47         377        1582         183
+
+  Columns 19 through 24
+
+        1247         399        1649         807         519        1771
+
+  Columns 25 through 30
+
+        1411        1637         765         245        1873         267
+
+  Columns 31 through 36
+
+        1131        1365         758         221        1466         780
+
+  Columns 37 through 42
+
+         964         663         892         365         627         513
+
+  Columns 43 through 48
+
+        1974         134         941          67        1623        1421
+
+  Columns 49 through 54
+
+        1346         137         812         822         737        1730
+
+  Columns 55 through 60
+
+         405          70          26        1902        1451         201
+
+  Columns 61 through 66
+
+        1187        1608         517        1897         652        1002
+
+  Columns 67 through 72
+
+         732         689        1153        1098        1648        1894
+
+  Columns 73 through 78
+
+         229        1958        1886        1285         278        1297
+
+  Columns 79 through 84
+
+         257        1674         400         360        1221         427
+
+  Columns 85 through 90
+
+          99         824         590        1042         163        1815
+
+  Columns 91 through 96
+
+         733        1231          80         515         299          11
+
+  Columns 97 through 102
+
+        1813        1900         936        1983        1383        1634
+
+  Columns 103 through 108
+
+         462         241        1917          41          39          42
+
+  Columns 109 through 114
+
+          40        1493        1732        1836        1197         347
+
+  Columns 115 through 120
+
+         591         481         866        1067         549        1141
+
+  Columns 121 through 126
+
+         422         380        1810          13        1896        1200
+
+  Columns 127 through 132
+
+        1659        1208         788        1263          43        1671
+
+  Columns 133 through 138
+
+         993        1916         415        1154        1874         111
+
+  Columns 139 through 144
+
+        1549        1260         121        1546        1614         662
+
+  Columns 145 through 150
+
+        1473         286        1244         795          49         792
+
+  Columns 151 through 156
+
+        1535         413        1293        1676        1256        1940
+
+  Columns 157 through 162
+
+         734         994         698          62        1826         151
+
+  Columns 163 through 168
+
+        1939         934          27        1289         411         181
+
+  Columns 169 through 174
+
+        1534        1004         251        1026         499        1531
+
+  Columns 175 through 180
+
+         809         138         916         516         918        1596
+
+  Columns 181 through 186
+
+        1658         806        1334         186         810        1196
+
+  Columns 187 through 192
+
+          15          14          83         791         571        1080
+
+  Columns 193 through 198
+
+        1759         564        1808        1230         946        1326
+
+  Columns 199 through 204
+
+         992        1316        1400         227        1707         846
+
+  Columns 205 through 210
+
+        1442        1484         581        1985         740        1039
+
+  Columns 211 through 216
+
+        1870        1367         726         266         141        1677
+
+  Columns 217 through 222
+
+         701        1573        1176         838        1729          66
+
+  Columns 223 through 228
+
+         678        1935        1967         188         315        1414
+
+  Columns 229 through 234
+
+        1991        1959         548         346         500        1049
+
+  Columns 235 through 240
+
+         444         847        1987        1513        1767        1669
+
+  Columns 241 through 246
+
+         406         115         127        1313         842         625
+
+  Columns 247 through 252
+
+          72        1142        1227        1387        1547         600
+
+  Columns 253 through 258
+
+        1950        1388        1111        1483        1471        1377
+
+  Columns 259 through 264
+
+         705        1672         485        1340         290         345
+
+  Columns 265 through 270
+
+        1960        1047         293        1993        1465         779
+
+  Columns 271 through 276
+
+         606        1811        1113        1043         962         342
+
+  Columns 277 through 282
+
+        1370          86        1830        1941        1398        1173
+
+  Columns 283 through 288
+
+        1915        1210        1163        1028        1863         187
+
+  Columns 289 through 294
+
+         648        1489        1031        1401        1912         496
+
+  Columns 295 through 300
+
+         120         761         169         100        1597         609
+
+  Columns 301 through 306
+
+         532        1504         787         539        1175         996
+
+  Columns 307 through 312
+
+        1556          59         601        1248        1280          78
+
+  Columns 313 through 318
+
+         464         323        1660         196         632         235
+
+  Columns 319 through 324
+
+        1887         362        1867          84         589        1386
+
+  Columns 325 through 330
+
+         793         825         817         231        1366         790
+
+  Columns 331 through 336
+
+         885        1657         495         731         873        1791
+
+  Columns 337 through 342
+
+         674        1901        1701        1775         919        1890
+
+  Columns 343 through 348
+
+         784        1252        1640        1666        1486         372
+
+  Columns 349 through 354
+
+         312        1351        1139        1956         562        1981
+
+  Columns 355 through 360
+
+        1665         823        1029        1315         275        1920
+
+  Columns 361 through 366
+
+         107        1746         397         219         147         214
+
+  Columns 367 through 372
+
+        1115        1724         410         350         706         125
+
+  Columns 373 through 378
+
+          93         940         436         753         277        1668
+
+  Columns 379 through 384
+
+         458         685        1853         321        1702          31
+
+  Columns 385 through 390
+
+        1296         554         180         987         694        1502
+
+  Columns 391 through 396
+
+        1761        1748         865         979         538         143
+
+  Columns 397 through 402
+
+         561        1072         448        1797         557        1821
+
+  Columns 403 through 408
+
+         929         907        1062        1485        1840        1978
+
+  Columns 409 through 414
+
+         202         972         384          50          52          53
+
+  Columns 415 through 420
+
+          51        1406         396        1764         223         831
+
+  Columns 421 through 426
+
+         633        1075         970        1500         475        1325
+
+  Columns 427 through 432
+
+        1114         635        1288        1770        1209          45
+
+  Columns 433 through 438
+
+         258         878         849         622        1396        1419
+
+  Columns 439 through 444
+
+         250        1277         597        1137         619         288
+
+  Columns 445 through 450
+
+         325         220        1972        1030        1842        1076
+
+  Columns 451 through 456
+
+        1025        1035         165        1869         699         145
+
+  Columns 457 through 462
+
+        1598        1592         988         741        1478        1433
+
+  Columns 463 through 468
+
+         414        1038         339         359        1335         958
+
+  Columns 469 through 474
+
+        1490         199         804        1089         749        1627
+
+  Columns 475 through 480
+
+         983        1380         826        1328         292         191
+
+  Columns 481 through 486
+
+        1584        1862        1392         752        1268         956
+
+  Columns 487 through 492
+
+        1040         200         895        1982         724        1255
+
+  Columns 493 through 498
+
+        1639         644         568         763        1279          68
+
+  Columns 499 through 504
+
+         225        1785         980        1605        1454        1425
+
+  Columns 505 through 510
+
+        1171        1609         777         176        1110        1904
+
+  Columns 511 through 516
+
+         870        1452         480        1178         306         520
+
+  Columns 517 through 522
+
+        1541         965         579        1428         264         802
+
+  Columns 523 through 528
+
+          54        1643        1525         437        1348         799
+
+  Columns 529 through 534
+
+        1359        1120         248        1562         794         309
+
+  Columns 535 through 540
+
+         363        1250        1681        1624        1876         168
+
+  Columns 541 through 546
+
+        1558        1765         631        1570        1999        1662
+
+  Columns 547 through 552
+
+         353        1294         453        1885        1734        1259
+
+  Columns 553 through 558
+
+        1195         882        1438        1101        1440         391
+
+  Columns 559 through 564
+
+        1575        1048          28         501        1790        1226
+
+  Columns 565 through 570
+
+        1424        1545        1924        1258        1878        1321
+
+  Columns 571 through 576
+
+         498         424        1931        1376          57        1292
+
+  Columns 577 through 582
+
+          95        1911        1822         912         174        1970
+
+  Columns 583 through 588
+
+        1856         467         446        1644         803        1542
+
+  Columns 589 through 594
+
+         636         440         208         876        1116         552
+
+  Columns 595 through 600
+
+        1903        1816        1841        1415        1020          91
+
+  Columns 601 through 606
+
+         395         595        1964        1381         721        1532
+
+  Columns 607 through 612
+
+        1393        1942         253         582        1834        1168
+
+  Columns 613 through 618
+
+         776        1563         949        1373        1372         334
+
+  Columns 619 through 624
+
+         637         783         814         995         361        1127
+
+  Columns 625 through 630
+
+         331          36        1997         504         860        1913
+
+  Columns 631 through 636
+
+         913         911         594        1391         194         466
+
+  Columns 637 through 642
+
+        1236        1617         931         808         683          37
+
+  Columns 643 through 648
+
+        1780          60        1796        1194        1877         680
+
+  Columns 649 through 654
+
+        1311        1447        1242         354        1474        1272
+
+  Columns 655 through 660
+
+        1041        1642         750         950         563         341
+
+  Columns 661 through 666
+
+         833        1013         490         576        1420        1033
+
+  Columns 667 through 672
+
+         602        1577        1304         329         816        1479
+
+  Columns 673 through 678
+
+        1990        1378        1355         729        1186        1568
+
+  Columns 679 through 684
+
+        1389         508         117        1162         665        1871
+
+  Columns 685 through 690
+
+         617        1859        1016        1753         702        1107
+
+
+ans =
+
+  Columns 1 through 6
+
+         267         245        1635         249         765        1247
+
+  Columns 7 through 12
+
+         493         897         739        1843        1494        1387
+
+  Columns 13 through 18
+
+        1423         625         964         241        1897        1634
+
+  Columns 19 through 24
+
+        1042        1679        1900         451         822         111
+
+  Columns 25 through 30
+
+         138          66        1293        1884         780          14
+
+  Columns 31 through 36
+
+         994         824        1256         992         377        1730
+
+  Columns 37 through 42
+
+         812         419         391         513        1411        1196
+
+  Columns 43 through 48
+
+         802         201        1451        1472        1892          67
+
+  Columns 49 through 54
+
+        1153        1974        1675         365         495         529
+
+  Columns 55 through 60
+
+         892         581         444         422         520         411
+
+  Columns 61 through 66
+
+        1771          13        1060         102        1772        1549
+
+  Columns 67 through 72
+
+         515        1904         548        1111        1983        1943
+
+  Columns 73 through 78
+
+        1614        1501        1671         785         571         437
+
+  Columns 79 through 84
+
+        1959        1372        1406         806        1674        1421
+
+  Columns 85 through 90
+
+        1867          49         143        1770          16        1924
+
+  Columns 91 through 96
+
+         345          75        1390        1579        1839        1326
+
+  Columns 97 through 102
+
+          31         779         221        1511         609          26
+
+  Columns 103 through 108
+
+        1810         100        1094        1583        1002        1244
+
+  Columns 109 through 114
+
+         198          40          41          42          39        1582
+
+  Columns 115 through 120
+
+        1110         137        1960        1047        1398        1260
+
+  Columns 121 through 126
+
+         281         415        1870        1058         188        1680
+
+  Columns 127 through 132
+
+         399        1599        1526         648        1353         235
+
+  Columns 133 through 138
+
+        1873         662         601        1168         440        1610
+
+  Columns 139 through 144
+
+        1605        1967        1136         187        1447         107
+
+  Columns 145 through 150
+
+         830        1288        1836        1197        1601        1648
+
+  Columns 151 through 156
+
+        1972        1231        1248        1611         350        1917
+
+  Columns 157 through 162
+
+         181        1346        1319         564        1258         127
+
+  Columns 163 through 168
+
+         264         169        1067        1536        1965         826
+
+  Columns 169 through 174
+
+        1263         882        1651        1608        1366          86
+
+  Columns 175 through 180
+
+         315         199         686          62         570          88
+
+  Columns 181 through 186
+
+        1181        1073        1213        1347         549        1466
+
+  Columns 187 through 192
+
+         286         979        1668        1416         679        1574
+
+  Columns 193 through 198
+
+         504        1963          91         866         561        1887
+
+  Columns 199 through 204
+
+         993          72          43        1643        1504        1642
+
+  Columns 205 through 210
+
+         166         834        1076         110         989         709
+
+  Columns 211 through 216
+
+         354        1758        1473        1920        1946        1200
+
+  Columns 217 through 222
+
+        1334         614        1911        1761        1534         931
+
+  Columns 223 through 228
+
+        1489         936        1007         792         507        1064
+
+  Columns 229 through 234
+
+        1063        1547        1340        1187        1115        1515
+
+  Columns 235 through 240
+
+         559          96         576         737         141          70
+
+  Columns 241 through 246
+
+         557         621         929         885        1194         839
+
+  Columns 247 through 252
+
+        1004         467        1048        1365         809        1951
+
+  Columns 253 through 258
+
+        1581        1508         105        1724         840         813
+
+  Columns 259 through 264
+
+        1541         636        1942        1548          53          52
+
+  Columns 265 through 270
+
+          51          50        1775         918        1816         982
+
+  Columns 271 through 276
+
+        1546         317          85        1767          36         275
+
+  Columns 277 through 282
+
+         763        1264         634        1894         731         505
+
+  Columns 283 through 288
+
+        1495        1902        1734         117        1537          47
+
+  Columns 289 through 294
+
+        1227        1785        1794         266        1089        1289
+
+  Columns 295 through 300
+
+          80        1032         190        1514        1139        1010
+
+  Columns 301 through 306
+
+        1710         953        1360        1623        1912         732
+
+  Columns 307 through 312
+
+         940         293         622          54         527         617
+
+  Columns 313 through 318
+
+        1273         257         147         453          23         817
+
+  Columns 319 through 324
+
+         469         279         950         196        1022        1285
+
+  Columns 325 through 330
+
+         344         242         347        1791          84         642
+
+  Columns 331 through 336
+
+         487        1878        1414         517        1808        1296
+
+  Columns 337 through 342
+
+         358         295        1491        1170        1452         734
+
+  Columns 343 through 348
+
+        1982        1550        1156        1100         689         447
+
+  Columns 349 through 354
+
+         701         910        1799        1286        1176        1039
+
+  Columns 355 through 360
+
+        1746         652        1649         803          78         973
+
+  Columns 361 through 366
+
+         500        1555        1209         313        1386        1119
+
+  Columns 367 through 372
+
+        1570        1916         519        1998        1295         932
+
+  Columns 373 through 378
+
+         912         544        1985         224          63         489
+
+  Columns 379 through 384
+
+         348        1560         665         546         360        1294
+
+  Columns 385 through 390
+
+        1986         318        1400        1006        1003         329
+
+  Columns 391 through 396
+
+          56        1325        1348        1993        1413         619
+
+  Columns 397 through 402
+
+          45          60        1569         720         477         758
+
+  Columns 403 through 408
+
+          29         825        1482          32        1199        1510
+
+  Columns 409 through 414
+
+        1223         397         550         861         978         807
+
+  Columns 415 through 420
+
+         334        1558         416         210         661        1224
+
+  Columns 421 through 426
+
+        1879         217        1166        1778        1272        1091
+
+  Columns 427 through 432
+
+        1826        1595        1659         859         331        1666
+
+  Columns 433 through 438
+
+        1717        1068         482        1210        1069         478
+
+  Columns 439 through 444
+
+        1370         299         194        1129        1698        1516
+
+  Columns 445 through 450
+
+        1907         414        1729        1101         197         248
+
+  Columns 451 through 456
+
+        1071        1381        1744        1716         538        1631
+
+  Columns 457 through 462
+
+         150         776         164         523        1592         860
+
+  Columns 463 through 468
+
+         182        1692        1221        1280        1619        1841
+
+  Columns 469 through 474
+
+        1328        1795        1764         254         220          99
+
+  Columns 475 through 480
+
+         856         212        1106          33         119         893
+
+  Columns 481 through 486
+
+        1257         847        1672        1597         533          57
+
+  Columns 487 through 492
+
+        1159        1023         934          83        1978        1120
+
+  Columns 493 through 498
+
+         599         252         442        1855         694         273
+
+  Columns 499 through 504
+
+        1163         343        1728        1314        1798        1596
+
+  Columns 505 through 510
+
+        1246        1751         627         554         810         681
+
+  Columns 511 through 516
+
+         174        1849         767         937        1306         583
+
+  Columns 517 through 522
+
+         980         323         296        1871        1697        1324
+
+  Columns 523 through 528
+
+          18        1242        1208        1321        1401         462
+
+  Columns 529 through 534
+
+         283        1812        1690        1500         468         485
+
+  Columns 535 through 540
+
+         823         553         838         919        1014         160
+
+  Columns 541 through 546
+
+          59        1694         794         139        1790        1935
+
+  Columns 547 through 552
+
+        1332        1660        1461         841        1803        1142
+
+  Columns 553 through 558
+
+         413         403        1650           6        1899          82
+
+  Columns 559 through 564
+
+          44        1572         395        1763          37         155
+
+  Column 565
+
+         698
+
+
+ans =
+
+  Columns 1 through 6
+
+         377         493        1582        1771         513        1772
+
+  Columns 7 through 12
+
+        1325        1285        1423        1414        1884        1648
+
+  Columns 13 through 18
+
+         365         629        1635         897         137         286
+
+  Columns 19 through 24
+
+         625        1991         627         249        1263          66
+
+  Columns 25 through 30
+
+         780         732        1406        1411        1208        1843
+
+  Columns 31 through 36
+
+         791        1060        1836         812        1730         138
+
+  Columns 37 through 42
+
+         822        1669         187         802         698        1573
+
+  Columns 43 through 48
+
+        1671        1935         807         571        1042        1867
+
+  Columns 49 through 54
+
+        1674         652         619        1546         359        1231
+
+  Columns 55 through 60
+
+        1960        1886         295         415         964         550
+
+  Columns 61 through 66
+
+         411         561         824         391        1227        1511
+
+  Columns 67 through 72
+
+        1939        1334         918         453        1494         663
+
+  Columns 73 through 78
+
+         765        1985        1597        1473        1892         830
+
+  Columns 79 through 84
+
+        1672        1221        1761         945        1186        1209
+
+  Columns 85 through 90
+
+          26        1668         489        1637        1623         739
+
+  Columns 91 through 96
+
+        1049        1563         267         581         111        1659
+
+  Columns 97 through 102
+
+        1897         304         916        1400          14         273
+
+  Columns 103 through 108
+
+         141        1002         245         190         448          49
+
+  Columns 109 through 114
+
+        1210          62        1896         639        1031        1987
+
+  Columns 115 through 120
+
+        1542        1644        1873         395        1115        1808
+
+  Columns 121 through 126
+
+        1887         622         590        1485          67        1560
+
+  Columns 127 through 132
+
+        1421          43          47         862        1859        1842
+
+  Columns 133 through 138
+
+         343        1894         737         924        1286         609
+
+  Columns 139 through 144
+
+         251         636        1451        1258        1280         941
+
+  Columns 145 through 150
+
+        1380         163        1649         591         761         276
+
+  Columns 151 through 156
+
+         806        1967        1405        1839        1914         766
+
+  Columns 157 through 162
+
+        1534        1917        1871         882        1982         758
+
+  Columns 163 through 168
+
+        1970        1328          70         989         399        1946
+
+  Columns 169 through 174
+
+        1394         201        1484         214          83         980
+
+  Columns 175 through 180
+
+        1004        1770         199         834         662        1493
+
+  Columns 181 through 186
+
+        1549        1920         548        1537         866          42
+
+  Columns 187 through 192
+
+          41          40          39         221        1514          75
+
+  Columns 193 through 198
+
+         910         645         339        1915         759         567
+
+  Columns 199 through 204
+
+         419        1260        1583        1532        1111         929
+
+  Columns 205 through 210
+
+         143         992         563         892         299        1047
+
+  Columns 211 through 216
+
+        1732        1912          72        1141         360        1547
+
+  Columns 217 through 222
+
+         767        1194        1256         127         790        1123
+
+  Columns 223 through 228
+
+         229        1067        1247        1834         189          32
+
+  Columns 229 through 234
+
+        1386         183        1382         241        1489        1168
+
+  Columns 235 through 240
+
+        1998         795         345         243        1466         564
+
+  Columns 241 through 246
+
+        1073         125        1135         787         520        1153
+
+  Columns 247 through 252
+
+         271         730        1439         939         682        1114
+
+  Columns 253 through 258
+
+        1950        1119        1110        1413        1154         495
+
+  Columns 259 through 264
+
+        1062        1058        1634         769        1024         979
+
+  Columns 265 through 270
+
+          86        1381         932        1108         257         462
+
+  Columns 271 through 276
+
+         772         549        1360        1625         611         293
+
+  Columns 277 through 282
+
+        1652        1799         211        1945        1175         656
+
+  Columns 283 through 288
+
+        1223        1326         147        1079        1724        1974
+
+  Columns 289 through 294
+
+        1365         228         799        1487         615         689
+
+  Columns 295 through 300
+
+        1993        1036        1340         694        1938        1092
+
+  Columns 301 through 306
+
+        1366          59         680         784        1259         792
+
+  Columns 307 through 312
+
+        1581        1750        1346        1398        1187        1272
+
+  Columns 313 through 318
+
+        1288         100         427        1244          85         601
+
+  Columns 319 through 324
+
+         538         115        1707         361         994        1838
+
+  Columns 325 through 330
+
+         895         169         559         181        1297        1608
+
+  Columns 331 through 336
+
+        1442        1766        1900        1785         323        1679
+
+  Columns 337 through 342
+
+         437         817         284         935        1666          31
+
+  Columns 343 through 348
+
+        1651        1965         123        1924         248        1248
+
+  Columns 349 through 354
+
+        1107        1098         500        1856         523         576
+
+  Columns 355 through 360
+
+        1918        1736         610        1687        1959        1630
+
+  Columns 361 through 366
+
+        1614         847         546        1137         173         191
+
+  Columns 367 through 372
+
+        1053         883         651        1574         644         258
+
+  Columns 373 through 378
+
+         733        1550        1478        1448        1239         664
+
+  Columns 379 through 384
+
+        1943         617        1866         180        1540        1091
+
+  Columns 385 through 390
+
+         813         342        1567        1452         962         378
+
+  Columns 391 through 396
+
+         278        1228        1339        1182        1465         119
+
+  Columns 397 through 402
+
+         461         265           9         175        1813         545
+
+  Columns 403 through 408
+
+         679        1224        1570        1003          91        1531
+
+  Columns 409 through 414
+
+        1192         724        1293        1370         831         648
+
+  Columns 415 through 420
+
+         202         632        1727         968         527          99
+
+  Columns 421 through 426
+
+         726         826         803        1338        1758         681
+
+  Columns 427 through 432
+
+        1639         281          45         740        1759        1972
+
+  Columns 433 through 438
+
+        1763        1523        1306        1281         704         893
+
+  Columns 439 through 444
+
+        1798         532        1335         958         890         954
+
+  Columns 445 through 450
+
+          92         634         334        1504         113         661
+
+  Columns 451 through 456
+
+         814        1130        1516         788         801        1416
+
+  Columns 457 through 462
+
+         986        1401        1043         961        1510        1472
+
+  Columns 463 through 468
+
+         519        1174         517        1861         227         196
+
+  Columns 469 through 474
+
+         525         669        1152        1618        1038        1294
+
+  Columns 475 through 480
+
+         953        1418         350          93         164        1874
+
+  Columns 481 through 486
+
+         871         440        1313         624         234        1851
+
+  Columns 487 through 492
+
+        1650        1746         151         223        1147         982
+
+  Columns 493 through 498
+
+         838         778        1804        1028         277         167
+
+  Columns 499 through 504
+
+        1937        1039        1128         510        1011         749
+
+  Columns 505 through 510
+
+         515         686        1351        1419         626        1009
+
+  Columns 511 through 516
+
+         579          55         972        1824        1348         118
+
+  Columns 517 through 522
+
+        1319         165         300         809         473        1266
+
+  Columns 523 through 528
+
+         572        1872          79         846        1775        1902
+
+  Columns 529 through 534
+
+        1302        1870        1196         208        1289         993
+
+  Columns 535 through 540
+
+         106          11        1236        1105        1695        1099
+
+  Columns 541 through 546
+
+        1097        1756         722         931         518        1795
+
+  Columns 547 through 552
+
+        1685         554          53          50          51        1526
+
+  Columns 553 through 558
+
+         316         136          46        1378         965        1714
+
+  Columns 559 through 564
+
+        1100        1271         329        1498        1713        1633
+
+  Columns 565 through 570
+
+          63          78         226        1589         654        1314
+
+  Columns 571 through 576
+
+        1035         543         451        1558        1235        1454
+
+  Columns 577 through 582
+
+        1983         606         325        1981        1102         384
+
+  Columns 583 through 588
+
+        1955        1359         600         779         829        1103
+
+  Columns 589 through 594
+
+         640         635        1066         728         534         705
+
+  Columns 595 through 600
+
+        1660        1440         331        1956        1195        1167
+
+  Columns 601 through 606
+
+        1555        1505         665         602         237         203
+
+  Columns 607 through 612
+
+         842         776         370         516         786         157
+
+  Columns 613 through 618
+
+        1409        1344         264         102         940        1786
+
+  Columns 619 through 624
+
+        1990         467        1667        1211        1233        1522
+
+  Columns 625 through 630
+
+        1809        1480         860         247         353        1176
+
+  Columns 631 through 636
+
+         494        1688         621         875         166         326
+
+  Columns 637 through 642
+
+        1308         292        1229         843          81         154
+
+  Columns 643 through 648
+
+        1764          73        1543        1999         266         431
+
+  Columns 649 through 654
+
+         145        1928        1220        1518        1387         444
+
+  Columns 655 through 660
+
+          15        1379        1676         463        1404        1541
+
+  Columns 661 through 666
+
+          60        1131        1698        1849        1483         344
+
+  Columns 667 through 672
+
+        1197         547        1471        1139        1822         570
+
+  Columns 673 through 678
+
+        1777         568        1600        1093        1006        1789
+
+  Columns 679 through 684
+
+        1636        1545        1010         426         735        1332
+
+  Columns 685 through 690
+
+        1495         595         210         672        1566        1275
+
+  Columns 691 through 696
+
+        1797         413         480         912         213        1605
+
+  Columns 697 through 702
+
+        1780        1840        1048        1910         711         107
+
+  Columns 703 through 708
+
+         540         396         369         348        1399         821
+
+  Columns 709 through 714
+
+        1279         582         805        1702         727        1316
+
+  Columns 715 through 720
+
+         429        1296        1760        1364        1677         723
+
+  Columns 721 through 726
+
+         678          54         514          23         400        1179
+
+  Columns 727 through 732
+
+        1120         185         633        1309         354        1479
+
+  Columns 733 through 738
+
+         330        1061        1371         853         702        1613
+
+  Columns 739 through 744
+
+         697        1077         684         976         783         959
+
+  Columns 745 through 750
+
+        1013        1826         315        1559        1080         638
+
+  Columns 751 through 752
+
+         904        1063
+
+
+ans =
+
+  Columns 1 through 6
+
+         377         493         625        1473        1771         419
+
+  Columns 7 through 12
+
+         137        1635         564         686        1772        1487
+
+  Columns 13 through 18
+
+        1608        1042        1668        1634        1110         601
+
+  Columns 19 through 24
+
+         138        1526        1094         622         813        1935
+
+  Columns 25 through 30
+
+         732        1884         994        1758         992        1583
+
+  Columns 31 through 36
+
+        1605        1960         559         345        1511         221
+
+  Columns 37 through 42
+
+         187         143        1775        1406        1985         196
+
+  Columns 43 through 48
+
+        1785         571        1263         897        1582        1411
+
+  Columns 49 through 54
+
+        1293         576         617        1597          66        1296
+
+  Columns 55 through 60
+
+         634        1194         780        1939         513         648
+
+  Columns 61 through 66
+
+        1386        1346        1870        1637        1546        1334
+
+  Columns 67 through 72
+
+        1260         329          67         932        1644        1472
+
+  Columns 73 through 78
+
+         520        1959          26        1451        1982         523
+
+  Columns 79 through 84
+
+         817        1347         549         964        1325         245
+
+  Columns 85 through 90
+
+        1537         453         812        1843        1679        1560
+
+  Columns 91 through 96
+
+        1920        1279         698        1795        1601         779
+
+  Columns 97 through 102
+
+          83         267         249         609        1887          31
+
+  Columns 103 through 108
+
+        1730         241        1153         500        1671        1839
+
+  Columns 109 through 114
+
+        1423        1648         802        1943        1360         731
+
+  Columns 115 through 120
+
+        1964         411         481          47        1022         548
+
+  Columns 121 through 126
+
+        1713        1993         618        1381        1669        1002
+
+  Columns 127 through 132
+
+        1244         826        1076         365         619         102
+
+  Columns 133 through 138
+
+        1547         980         785        1549         489        1842
+
+  Columns 139 through 144
+
+        1900         199         940          43        1119        1176
+
+  Columns 145 through 150
+
+        1659        1047         652        1680        1579        1946
+
+  Columns 151 through 156
+
+         198         834        1573         953        1328         830
+
+  Columns 157 through 162
+
+        1394         546         391        1983         667        1196
+
+  Columns 163 through 168
+
+         654         629         935         515        1550        1187
+
+  Columns 169 through 174
+
+        1319         818         529         572        1060        1614
+
+  Columns 175 through 180
+
+         211        1710        1456          45         281        1466
+
+  Columns 181 through 186
+
+        1348         295        1168         803        1068         581
+
+  Columns 187 through 192
+
+        1574        1836        1339        1519        1107         440
+
+  Columns 193 through 198
+
+        1485         510         875        1489         761        1692
+
+  Columns 199 through 204
+
+        1053         689        1450         824         326        1651
+
+  Columns 205 through 210
+
+         923        1058         257        1779        1666         972
+
+  Columns 211 through 216
+
+         404        1041        1972         561        1790        1569
+
+  Columns 217 through 222
+
+          86        1938        1514        1067         893        1208
+
+  Columns 223 through 228
+
+        1108         645         259        1515        1770          91
+
+  Columns 229 through 234
+
+        1924        1351         679          14        1613        1049
+
+  Columns 235 through 240
+
+        1767         123          80        1231         494         504
+
+  Columns 241 through 246
+
+          70         169         701        1709        1879         279
+
+  Columns 247 through 252
+
+         671        1233         682        1780        1281         709
+
+  Columns 253 through 258
+
+         665         758         929         166        1091         989
+
+  Columns 259 through 264
+
+         766        1804        1871          62         591        1728
+
+  Columns 265 through 270
+
+         862         765         632        1421         908          49
+
+  Columns 271 through 276
+
+         554        1003        1169         681         918        1071
+
+  Columns 277 through 282
+
+         550         772         569        1223         371        1494
+
+  Columns 283 through 288
+
+        1841        1123         860          16        1973        1227
+
+  Columns 289 through 294
+
+        1256        1363        1724         866         938        1867
+
+  Columns 295 through 300
+
+         892        1004        1561         874         910         610
+
+  Columns 301 through 306
+
+        1106        1548         538        1878         508         639
+
+  Columns 307 through 312
+
+        1120        1167        1541        1382         557        1596
+
+  Columns 313 through 318
+
+        1014         663         519        1340         611         212
+
+  Columns 319 through 324
+
+        1385        1965         127        1912         882        1063
+
+  Columns 325 through 330
+
+        1674          75        1209        1248         527        1917
+
+  Columns 331 through 336
+
+         607        1197         300         505        1643         662
+
+  Columns 337 through 342
+
+        1447        1886         164        1439         100         190
+
+  Columns 343 through 348
+
+         447        1247         235        1400         814         110
+
+  Columns 349 through 354
+
+        1440         266         807        1221        1239         136
+
+  Columns 355 through 360
+
+        1572        1744         614         738          60         979
+
+  Columns 361 through 366
+
+         566        1504         642         595        1213        1285
+
+  Columns 367 through 372
+
+        1390        1711        1759         568         354        1855
+
+  Columns 373 through 378
+
+         191        1172        1970        1687        1496         706
+
+  Columns 379 through 384
+
+        1073        1338         286        1986         636         325
+
+  Columns 385 through 390
+
+          33         786         737        1746        1480        1761
+
+  Columns 391 through 396
+
+         399        1911         547        1175        1245        1919
+
+  Columns 397 through 402
+
+         590         919        1894         961         147        1295
+
+  Columns 403 through 408
+
+        1897        1501        1998         113         297         512
+
+  Columns 409 through 414
+
+         253         739         278         462         822        1534
+
+  Columns 415 through 420
+
+          96         378        1048        1552         448        1495
+
+  Columns 421 through 426
+
+        1191        1484         444        1902        1309        1043
+
+  Columns 427 through 432
+
+        1032        1585        1808        1890         495         551
+
+  Columns 433 through 438
+
+        1435         296        1950         188        1599         845
+
+  Columns 439 through 444
+
+        1084          78         931        1757         899        1031
+
+  Columns 445 through 450
+
+        1210        1136        1991        1642        1764        1092
+
+  Columns 451 through 456
+
+        1690        1224         293        1478          15         715
+
+  Columns 457 through 462
+
+        1257        1873         656         427          72         869
+
+  Columns 463 through 468
+
+        1246        1532         242         574         118         539
+
+  Columns 469 through 474
+
+        1657        1566        1622         771        1387         720
+
+  Columns 475 through 480
+
+        1539          23        1754         484        1141        1955
+
+  Columns 481 through 486
+
+        1253        1577        1799        1131         896        1803
+
+  Columns 487 through 492
+
+         517         955         579         558        1658         172
+
+  Columns 493 through 498
+
+        1129        1200        1365         358        1264         791
+
+  Columns 499 through 504
+
+        1414         348         783        1672        1159         351
+
+  Columns 505 through 510
+
+         805        1650         222        1731        1760         627
+
+  Columns 511 through 516
+
+        1611         283        1832        1948         563        1481
+
+  Columns 517 through 522
+
+         168         973         336         631        1235         767
+
+  Columns 523 through 528
+
+         883        1826        1258        1673        1027         350
+
+  Columns 529 through 534
+
+        1932        1715        1415         944         426        1660
+
+  Columns 535 through 540
+
+         451        1013         650        1733        1747         317
+
+  Columns 541 through 546
+
+         347         567        1736         251        1691         626
+
+  Columns 547 through 552
+
+         397         853        1705         774         653        1189
+
+  Columns 553 through 558
+
+        1395         806        1600        1575         183        1558
+
+  Columns 559 through 564
+
+         156        1286         885         189         315         941
+
+  Columns 565 through 570
+
+        1064        1111         107         125        1037        1694
+
+  Columns 571 through 576
+
+        1794         282        1135         469        1875        1915
+
+  Columns 577 through 582
+
+         842         794        1185         264        1508        1967
+
+  Columns 583 through 588
+
+         159         704        1491        1971         719         111
+
+  Columns 589 through 594
+
+        1961         985        1662        1544         809         175
+
+  Columns 595 through 600
+
+        1930         482        1220         976        1316         934
+
+  Columns 601 through 606
+
+        1892        1996        1378        1816         323         474
+
+  Columns 607 through 612
+
+         696        1698         974         596        1591        1467
+
+  Columns 613 through 618
+
+        1609        1877        1639        1616        1267         959
+
+  Columns 619 through 624
+
+        1398        1942         180         473         777         141
+
+  Columns 625 through 630
+
+        1625          59          32          13        1125         395
+
+  Columns 631 through 636
+
+         115        1280        1655         958        1482        1097
+
+  Columns 637 through 642
+
+         693        1675         210         119        1366         194
+
+  Columns 643 through 648
+
+         847         105        1056        1720        1936        1017
+
+  Columns 649 through 654
+
+         582        1353         936        1362         265         344
+
+  Columns 655 through 660
+
+         311         154         485        1822        1783        1055
+
+  Columns 661 through 666
+
+        1413         359         133         890        1170         415
+
+  Columns 667 through 672
+
+         967         692         560        1399        1479         723
+
+  Columns 673 through 678
+
+          88        1051        1538        1211        1818        1461
+
+  Columns 679 through 684
+
+        1313         384        1009         370         163        1916
+
+  Columns 685 through 690
+
+         450        1344         421        1352        1922         461
+
+  Columns 691 through 696
+
+         829         165        1796        1623        1412        1087
+
+  Columns 697 through 702
+
+          51          52          50          53          18        1931
+
+  Columns 703 through 708
+
+         694        1984         957         801         638         446
+
+  Columns 709 through 714
+
+         608         207        1057        1969         769        1112
+
+  Columns 715 through 720
+
+        1743        1517         492         533        1181        1259
+
+  Columns 721 through 726
+
+        1896        1323        1944         988        1531        1797
+
+  Columns 727 through 732
+
+        1306        1633         379         145        1186         544
+
+  Column 733
+
+         228
+
+
+ans =
+
+  Columns 1 through 6
+
+         249         765         267         245        1423        1635
+
+  Columns 7 through 12
+
+         493        1494         822        1897        1892         739
+
+  Columns 13 through 18
+
+         111         897         824         201        1843         513
+
+  Columns 19 through 24
+
+         812        1247         377         415        1387        1974
+
+  Columns 25 through 30
+
+         964         286        1414        1674        1288          14
+
+  Columns 31 through 36
+
+        1115        1884        1060         495         780        1582
+
+  Columns 37 through 42
+
+         391        1730         792          66         365         806
+
+  Columns 43 through 48
+
+        1111        1285        1256        1967         138         802
+
+  Columns 49 through 54
+
+          49         399         581          42          39          40
+
+  Columns 55 through 60
+
+          41         437        1326         241         627        1873
+
+  Columns 61 through 66
+
+        1867        1231        1411        1772        1671         892
+
+  Columns 67 through 72
+
+         411        1648        1623        1581        1353        1536
+
+  Columns 73 through 78
+
+        1421        1771         181          75        1258         100
+
+  Columns 79 through 84
+
+        1900         343        1836        1917        1366         625
+
+  Columns 85 through 90
+
+        1372          85        1770         299        1570         141
+
+  Columns 91 through 96
+
+         882         451        1675        1649        1810        1398
+
+  Columns 97 through 102
+
+        1042        1904          72          67        1406        1493
+
+  Columns 103 through 108
+
+          62        1407        1113        1679        1664        1534
+
+  Columns 109 through 114
+
+         662        1416        1286         807         561        1039
+
+  Columns 115 through 120
+
+         993        1062        1405         830          26         737
+
+  Columns 121 through 126
+
+         350         621         570        1516        1808        1672
+
+  Columns 127 through 132
+
+        1761         571        1002        1153        1549        1069
+
+  Columns 133 through 138
+
+          31         979         560        1073         273        1874
+
+  Columns 139 through 144
+
+        1325        1545         839        1960         548         359
+
+  Columns 145 through 150
+
+         117         334         787         331        1263        1763
+
+  Columns 151 through 156
+
+         190         866         992         636        1370         666
+
+  Columns 157 through 162
+
+        1998         226        1452         918         127         520
+
+  Columns 163 through 168
+
+        1006         982        1294          32        1272         187
+
+  Columns 169 through 174
+
+        1248         529         831        1894         276         989
+
+  Columns 175 through 180
+
+        1380        1983        1196         639          86        1924
+
+  Columns 181 through 186
+
+        1872        1943        1965         859         264        1511
+
+  Columns 187 through 192
+
+        1839        1799        1614         137        1451         250
+
+  Columns 193 through 198
+
+         609        1472        1067         661         986         444
+
+  Columns 199 through 204
+
+        1798        1139        1168        1340          44        1887
+
+  Columns 205 through 210
+
+         555          70          43        1058         695         929
+
+  Columns 211 through 216
+
+         652         281        1227         515        1466         295
+
+  Columns 217 through 222
+
+        1210        1293         248         422         169         936
+
+  Columns 223 through 228
+
+         395        1573        1004        1812          99         795
+
+  Columns 229 through 234
+
+        1634        1652        1988         293        1365        1280
+
+  Columns 235 through 240
+
+         414         467         456        1413        1555        1866
+
+  Columns 241 through 246
+
+         360          16        1991        1504        1186         199
+
+  Columns 247 through 252
+
+        1863        1145         102        1567        1047         694
+
+  Columns 253 through 258
+
+          59        1972        1209         124         672         315
+
+  Columns 259 through 264
+
+        1583        1100        1356        1327          50          52
+
+  Columns 265 through 270
+
+          51          53         809        1260        1732         462
+
+  Columns 271 through 276
+
+         834         356        1208        1946         254        1447
+
+  Columns 277 through 282
+
+         284        1651         229        1899        1717          56
+
+  Columns 283 through 288
+
+         849         550        1289        1547        1221         791
+
+  Columns 289 through 294
+
+        1546        1314          13         941        1332         758
+
+  Columns 295 through 300
+
+         107        1912        1033        1324         125         838
+
+  Columns 301 through 306
+
+         785         163        1670        1187        1951          47
+
+  Columns 307 through 312
+
+        1007        1244         475          88         790         188
+
+  Columns 313 through 318
+
+         344        1942         717        1959          54         147
+
+  Columns 319 through 324
+
+         847        1259         449         189         640         615
+
+  Columns 325 through 330
+
+         734         440         619          91         235         517
+
+  Columns 331 through 336
+
+        1630        1181        1454         105         143        1834
+
+  Columns 337 through 342
+
+        1079        1400           9         376        1401         928
+
+  Columns 343 through 348
+
+        1489        1266         590         469         912        1510
+
+  Columns 349 through 354
+
+         730        1784         931         679        1910         323
+
+  Columns 355 through 360
+
+        1306         221        1918        1409        1580         958
+
+  Columns 361 through 366
+
+         203         585        1963        1197         270          82
+
+  Columns 367 through 372
+
+         453         489        1816        1724        1886         856
+
+  Columns 373 through 378
+
+        1699        1219         224         345          78         104
+
+  Columns 379 through 384
+
+         354        1098         745        1500         969         119
+
+  Columns 385 through 390
+
+         231        1864        1305         698         447         142
+
+  Columns 391 through 396
+
+         763          23         767         732         810         735
+
+  Columns 397 through 402
+
+         173         825         538        1562         210        1659
+
+  Columns 403 through 408
+
+        1486        1916        1902        1529        1063         518
+
+  Columns 409 through 414
+
+        1542         257        1740         722        1137         950
+
+  Columns 415 through 420
+
+        1563        1871         468        1734        1978         832
+
+  Columns 421 through 426
+
+        1048         684        1611        1163        1776         924
+
+  Columns 427 through 430
+
+         183        1126        1668         301
+
+
+ans =
+
+  Columns 1 through 6
+
+         493        1668        1635        1002        1772        1473
+
+  Columns 7 through 12
+
+         601         377        1411         411         249         788
+
+  Columns 13 through 18
+
+         732        1897         992         912         221        1884
+
+  Columns 19 through 24
+
+        1060          14         137        1648        1258        1634
+
+  Columns 25 through 30
+
+        1730        1501        1196        1887        1843        1293
+
+  Columns 31 through 36
+
+         812         513        1608        1231        1042        1334
+
+  Columns 37 through 42
+
+          66        1770        1494         141         940         564
+
+  Columns 43 through 48
+
+        1547        1326         897        1256        1526        1771
+
+  Columns 49 through 54
+
+         183         739         662         994        1549         581
+
+  Columns 55 through 60
+
+        1187        1168        1541         548        1900        1067
+
+  Columns 61 through 66
+
+         908        1248        1894        1176         245         248
+
+  Columns 67 through 72
+
+         495        1153        1423         267        1937         453
+
+  Columns 73 through 78
+
+         882         661         557        1808        1244        1892
+
+  Columns 79 through 84
+
+         892         517         549         561        1582        1679
+
+  Columns 85 through 90
+
+         241        1983        1546         138         885        1365
+
+  Columns 91 through 96
+
+         824         964         257        1466        1666         989
+
+  Columns 97 through 102
+
+        1982          26        1247        1560        1197          47
+
+  Columns 103 through 108
+
+        1111         936         399        1340         866         625
+
+  Columns 109 through 114
+
+        1194         765         663        1263        1972         639
+
+  Columns 115 through 120
+
+         100         698        1548         652         159          43
+
+  Columns 121 through 126
+
+          45         231        1902          49         523        1406
+
+  Columns 127 through 132
+
+         802        1032          67         235         780         508
+
+  Columns 133 through 138
+
+        1870         681         654        1810        1761         143
+
+  Columns 139 through 144
+
+         397         731         120         817         648         559
+
+  Columns 145 through 150
+
+         758         571          62         188        1047         576
+
+  Columns 151 through 156
+
+         720         438         365        1775         686         347
+
+  Columns 157 through 162
+
+        1131        1650         737         451        1873        1487
+
+  Columns 163 through 168
+
+        1799        1795        1272         427        1600         117
+
+  Columns 169 through 174
+
+         806         354        1871          54         617        1213
+
+  Columns 175 through 180
+
+         590        1889         403          78         519        1991
+
+  Columns 181 through 186
+
+         785         676        1296         165        1674         350
+
+  Columns 187 through 192
+
+         520         978         419         329        1398         632
+
+  Columns 193 through 198
+
+         611        1651         391         807         467         127
+
+  Columns 199 through 204
+
+        1959         211        1798        1100        1451         734
+
+  Columns 205 through 210
+
+         482        1386        1366        1511         609         689
+
+  Columns 211 through 216
+
+         515         791          85        1917         980        1536
+
+  Columns 217 through 222
+
+         932          31        1120         826        1392         847
+
+  Columns 223 through 228
+
+        1960        1346         218        1574         619        1904
+
+  Columns 229 through 234
+
+         440         337        1597         822        1073         970
+
+  Columns 235 through 240
+
+          72        1659          96        1581        1049        1285
+
+  Columns 241 through 246
+
+         190        1110        1830        1601        1347        1653
+
+  Columns 247 through 252
+
+         622         546         941         473        1599         875
+
+  Columns 253 through 258
+
+         462        1022         579        1260        1416         735
+
+  Columns 259 through 264
+
+         979         182         701        1711        1489        1583
+
+  Columns 265 through 270
+
+          80        1558         364         512        1226        1076
+
+  Columns 271 through 276
+
+         360        1920        1605         449        1089        1257
+
+  Columns 277 through 282
+
+        1767        1253         110        1924         334        1570
+
+  Columns 283 through 288
+
+          13        1360         124        1785        1573         500
+
+  Columns 289 through 294
+
+        1729         265          82         119         899         323
+
+  Columns 295 through 300
+
+         181        1363        1764         371        1170         105
+
+  Columns 301 through 306
+
+         251          50          53          51          52        1520
+
+  Columns 307 through 312
+
+        1938         358        1967        1675        1857        1441
+
+  Columns 313 through 318
+
+         795        1596        1914         779        1642         187
+
+  Columns 319 through 324
+
+        1233          88        1400        1614         823        1514
+
+  Columns 325 through 330
+
+        1066         678        1790         862         299        1727
+
+  Columns 331 through 336
+
+         369        1623         550        1836         184        1325
+
+  Columns 337 through 342
+
+        1242         111         242         961        1744         919
+
+  Columns 343 through 348
+
+        1094        1974        1091        1381         254        1421
+
+  Columns 349 through 354
+
+         275         186        1942         505         910        1328
+
+  Columns 355 through 360
+
+         784         993         729        1088        1139        1862
+
+  Columns 361 through 366
+
+         345        1208        1137         656        1804         460
+
+  Columns 367 through 372
+
+        1618          30        1993        1564        1014        1252
+
+  Columns 373 through 378
+
+        1946         160         716        1239         958         918
+
+  Columns 379 through 384
+
+         425         296        1864         642         416        1450
+
+  Columns 385 through 390
+
+         437        1515          75        1063         312         480
+
+  Columns 391 through 396
+
+        1279        1567        1569         626         645        1943
+
+  Columns 397 through 402
+
+         278        1200        1530         472        1669        1660
+
+  Columns 403 through 408
+
+        1532        1148         627        1671         591         444
+
+  Columns 409 through 414
+
+        1855         529          91         489         873        1135
+
+  Columns 415 through 420
+
+        1075        1133         634        1637         315          86
+
+  Columns 421 through 426
+
+         282        1343        1043        1004         790         767
+
+  Columns 427 through 432
+
+        1209        1184         326        1841        1181         827
+
+  Columns 433 through 438
+
+         554        1912         281        1916         679         199
+
+  Columns 439 through 444
+
+        1732        1227        1205        1124        1779         286
+
+  Columns 445 through 450
+
+         201         189        1267         196        1985         503
+
+  Columns 451 through 456
+
+        1484        1447        1025         293        1939        1658
+
+  Columns 457 through 462
+
+         481        1724        1544         763         264        1206
+
+  Columns 463 through 468
+
+        1119        1822        1175         297        1863         946
+
+  Columns 469 through 474
+
+        1082        1472        1083         599         477        1867
+
+  Columns 475 through 480
+
+        1039          83        1986         121        1759         796
+
+  Columns 481 through 486
+
+         931        1906        1780        1563         860         305
+
+  Columns 487 through 492
+
+        1264        1818         667        1390         507        1610
+
+  Columns 493 through 498
+
+        1319         551        1973         368         284        1053
+
+  Columns 499 through 504
+
+        1886         890         724        1078         461         712
+
+  Columns 505 through 510
+
+         861        1459          23         813         222        1783
+
+  Columns 511 through 516
+
+        1221        1370         933         959        1649         650
+
+  Columns 517 through 522
+
+         330        1893         846        1024         353         538
+
+  Columns 523 through 528
+
+         972         811         476        1422        1643        1106
+
+  Columns 529 through 534
+
+        1179         516        1537         107         384         636
+
+  Columns 535 through 540
+
+        1115         544         733         166         840         279
+
+  Columns 541 through 546
+
+        1271        1050        1556        1128         949        1178
+
+  Columns 547 through 552
+
+        1699        1084        1625        1516         616        1215
+
+  Columns 553 through 558
+
+         102         132        1145        1199         506         837
+
+  Columns 559 through 564
+
+         984        1941         521          41          42          39
+
+  Columns 565 through 570
+
+          40        1664          24         379        1592         809
+
+  Columns 571 through 576
+
+         665         341         629         793        1269         228
+
+  Columns 577 through 582
+
+         210         273         794        1099        1009        1918
+
+  Columns 583 through 588
+
+        1831         569        1694         818         893        1705
+
+  Columns 589 through 594
+
+        1232         198        1033         937         545        1007
+
+  Columns 595 through 600
+
+         874         706         300         173         319         362
+
+  Columns 601 through 606
+
+         572         496        1672        1401        1031         147
+
+  Columns 607 through 612
+
+         207         287        1911        1695        1907         925
+
+  Columns 613 through 618
+
+        1098         974        1136         692         751        1224
+
+  Columns 619 through 624
+
+        1577         433         487         583         988        1348
+
+  Columns 625 through 630
+
+        1872         421        1896         316        1316         868
+
+  Columns 631 through 636
+
+         653        1391         280        1935          61        1394
+
+  Columns 637 through 642
+
+         146         935         338         547         136        1888
+
+  Columns 643 through 648
+
+          60        1832         404        1469        1826         682
+
+  Columns 649 through 654
+
+         677        1555         641         787          20         759
+
+  Columns 655 through 660
+
+         830         845         339        1895        1064         810
+
+  Columns 661 through 666
+
+        1878         631        1534        1452        1308        1575
+
+  Columns 667 through 672
+
+        1415        1975         805        1313        1182        1385
+
+  Columns 673 through 678
+
+          70         566          18          77        1606         448
+
+  Columns 679 through 684
+
+         725         595         395        1736         614         950
+
+  Columns 685 through 690
+
+        1915         328        1504        1500        1223        1018
+
+  Columns 691 through 696
+
+          32        1588        1387        1713          29        1300
+
+  Columns 697 through 702
+
+         394         587         582        1859        1123        1220
+
+  Columns 703 through 708
+
+         856        1964         122        1380        1495         633
+
+  Columns 709 through 714
+
+        1080        1794         607        1465         973         843
+
+  Columns 715 through 720
+
+        1955        1142         175        1389         567          33
+
+  Columns 721 through 726
+
+          15         896        1210          56         820         834
+
+  Columns 727 through 732
+
+         721         483         814         543        1842        1815
+
+  Columns 733 through 738
+
+        1072         125        1125         226        1317        1288
+
+  Columns 739 through 744
+
+         484        1617        1903        1641        1680        1339
+
+  Columns 745 through 750
+
+        1852        1533         148        1853         446         602
+
+  Columns 751 through 756
+
+         134        1554        1104         164        1586         671
+
+  Columns 757 through 762
+
+         332         311          59         589        1442         618
+
+  Columns 763 through 768
+
+         352          37        1971        1616         223        1419
+
+  Columns 769 through 774
+
+        1289        1493        1480         343         704         839
+
+  Columns 775 through 780
+
+         276        1731        1280        1169          35         738
+
+  Columns 781 through 786
+
+          76         367         485        1306         180        1464
+
+  Columns 787 through 792
+
+         229        1479        1439        1238         447         953
+
+
+ans =
+
+  Columns 1 through 6
+
+         267         245         249         765        1423         625
+
+  Columns 7 through 12
+
+         897        1635         377         822         111         493
+
+  Columns 13 through 18
+
+         780         964         286        1387         513        1771
+
+  Columns 19 through 24
+
+         830        1372        1671        1582         415        1414
+
+  Columns 25 through 30
+
+        1843        1884         391         138        1472         802
+
+  Columns 31 through 36
+
+         824        1511        1494          66         295        1867
+
+  Columns 37 through 42
+
+        1960         365        1288         201        1325        1406
+
+  Columns 43 through 48
+
+         792         739        1892         187        1042        1534
+
+  Columns 49 through 54
+
+        1674          41          42          40          39        1247
+
+  Columns 55 through 60
+
+         812        1839        1836        1285        1421        1965
+
+  Columns 61 through 66
+
+         982        1353        1510          75         571         636
+
+  Columns 67 through 72
+
+          70         419          67        1730        1115        1058
+
+  Columns 73 through 78
+
+         834        1679         627        1974        1758         102
+
+  Columns 79 through 84
+
+        1943        1113         241         345         529        1451
+
+  Columns 85 through 90
+
+        1060         570        1772        1583        1967         520
+
+  Columns 91 through 96
+
+          14         609        1985        1263        1260         137
+
+  Columns 97 through 102
+
+         621        1542        1897          26         548         199
+
+  Columns 103 through 108
+
+        1210         918        1004         581          49         281
+
+  Columns 109 through 114
+
+         343        1504         892        1634         803        1153
+
+  Columns 115 through 120
+
+        1413         437         806         389         169        1873
+
+  Columns 121 through 126
+
+        1614        1672        1286        1573        1256        1411
+
+  Columns 127 through 132
+
+        1010         143        1900        1356        1537         118
+
+  Columns 133 through 138
+
+        1648        1675        1227          44         444        1319
+
+  Columns 139 through 144
+
+         561        1280          86         344        1935          32
+
+  Columns 145 through 150
+
+         953        1998        1746         527         489         273
+
+  Columns 151 through 156
+
+          62        1917          46        1623        1924         451
+
+  Columns 157 through 162
+
+        1946        1649         331         495         761        1174
+
+  Columns 163 through 168
+
+         515        1110          16        1306        1147         194
+
+  Columns 169 through 174
+
+          31          99        1452          72        1231        1209
+
+  Columns 175 through 180
+
+         422         395          43        1959        1866        1750
+
+  Columns 181 through 186
+
+        1816        1208        1963        1770         550         737
+
+  Columns 187 through 192
+
+        1221         181          59        1003        1159        1970
+
+  Columns 193 through 198
+
+        1630        1294        1235         276        1380        1047
+
+  Columns 199 through 204
+
+        1579        1111         411        1549         679         622
+
+  Columns 205 through 210
+
+         399         198        1223         979         147        1062
+
+  Columns 211 through 216
+
+        1366        1680         293         666         779        1824
+
+  Columns 217 through 222
+
+        1812        1493        1281         839        1987         662
+
+  Columns 223 through 228
+
+         190         807         989        1438        1611         945
+
+  Columns 229 through 234
+
+         348        1514         831        1289         772         504
+
+  Columns 235 through 240
+
+         994         992        1040         619        1761         694
+
+  Columns 241 through 246
+
+        1293        1652         910          83        1154        1342
+
+  Columns 247 through 252
+
+        1346         305         125        1370         266        1912
+
+  Columns 253 through 258
+
+         813        1006         100        1763         866        1724
+
+  Columns 259 through 264
+
+        1156         166         629        1545         359         809
+
+  Columns 265 through 270
+
+        1651         264        1259         652         176        1108
+
+  Columns 271 through 276
+
+         127         503         469        1069         304        1073
+
+  Columns 277 through 282
+
+         939         440         250         202        1716        1939
+
+  Columns 283 through 288
+
+         189        1347         145         924        1631        1489
+
+  Columns 289 through 294
+
+        1196        1546         838        1728         107         350
+
+  Columns 295 through 300
+
+        1550         224        1022         648         849        1904
+
+  Columns 301 through 306
+
+         458         993        1485         934         766         361
+
+  Columns 307 through 312
+
+         164         929        1785         376        1334        1637
+
+  Columns 313 through 318
+
+        1314        1224         463        1983        1920        1360
+
+  Columns 319 through 324
+
+        1748         447         572        1447        1597         383
+
+  Columns 325 through 330
+
+        1886        1991        1416        1194         787         640
+
+  Columns 331 through 336
+
+         414          48        1972         826        1119        1398
+
+  Columns 337 through 342
+
+         221         318        1401        1039        1031        1712
+
+  Columns 343 through 348
+
+        1523        1544        1244         413         882          92
+
+  Columns 349 through 354
+
+        1136        1870        1348          91        1394         895
+
+  Columns 355 through 360
+
+        1659         549          13        1326         689         157
+
+  Columns 361 through 366
+
+        1555         615        1581         853        1129         684
+
+  Columns 367 through 372
+
+        1331        1707         206        1400        1064         969
+
+  Columns 373 through 378
+
+         150         672         538         532        1198         634
+
+  Columns 379 through 384
+
+         860         214        1466        1690         123         817
+
+  Columns 385 through 390
+
+         509         825         229        1543        1874        1328
+
+  Columns 391 through 396
+
+        1981         299         726         163         519         559
+
+  Columns 397 through 402
+
+         698        1495        1560         591        1048        1351
+
+  Columns 403 through 408
+
+        1333         475         211        1067        1819         785
+
+  Columns 409 through 414
+
+         665        1378        1168         814         886        1605
+
+  Columns 415 through 420
+
+        1002        1324         494        1381        1258          23
+
+  Columns 421 through 426
+
+        1875        1367         139         258        1657         453
+
+  Columns 427 through 432
+
+         560        1910         568         931        1186         893
+
+  Columns 433 through 438
+
+           9        1246         859         883          57         360
+
+  Columns 439 through 444
+
+         141          47        1887         767         871         172
+
+  Columns 445 through 450
+
+         283        1791        1938         890        1439         981
+
+  Columns 451 through 456
+
+         932        1332        1386        1248        1211         624
+
+  Columns 457 through 462
+
+         210         669         257        1382        1692         980
+
+  Columns 463 through 468
+
+        1825         462         610        1698         208        1894
+
+  Columns 469 through 474
+
+        1167         856        1570         730        1161        1063
+
+  Columns 475 through 480
+
+          85        1878        1318         709        1808         564
+
+  Columns 481 through 486
+
+         758         104         351         862          78        1993
+
+  Columns 487 through 492
+
+        1799        1653        1338        1141        1513          60
+
+  Columns 493 through 498
+
+        1365        1516         832        1091         196         791
+
+  Columns 499 through 504
+
+          52          51          53          50         235         272
+
+  Columns 505 through 510
+
+        1200        1339        1340        1454         722        1498
+
+  Columns 511 through 516
+
+        1976         576        1335        1393         907        1747
+
+  Columns 517 through 522
+
+        1094         459        1480        1152         732        1139
+
+  Columns 523 through 528
+
+        1982         790         704         950        1857        1896
+
+  Columns 529 through 534
+
+        1643         600         973        1797        1942        1275
+
+  Columns 535 through 540
+
+          88        1525         958        1626         695        1197
+
+  Columns 541 through 546
+
+        1309        1484        1515        1608        1676         357
+
+  Columns 547 through 552
+
+         237        1664         645         180        1644        1526
+
+  Columns 553 through 558
+
+          95          84        1647        1531        1187        1482
+
+  Columns 559 through 564
+
+          34         676         270         584        1775        1053
+
+  Columns 565 through 570
+
+          56        1639        1395        1826         617        1559
+
+  Columns 571 through 576
+
+        1858        1877        1580        1859         878         251
+
+  Columns 577 through 581
+
+         537        1578        1487          36        1732
+
+
+results =
+
+    0.8967    0.7439    0.7886    0.8048    0.9320
+    0.8062    0.6902    0.9295    0.8486    0.8210
+
+
+average =
+
+    0.8515    0.7170    0.8591    0.8267    0.8765
+
+
+stddev =
+
+    0.0639    0.0380    0.0996    0.0310    0.0785
+
+
+confusion =
+
+    83    27
+    23   177
+
+meanperf    std_perf    meanfeat    std_feat    trtime    tetime
+0.826160    0.063589    646.600000    117.038645    4051.8100    0.5200

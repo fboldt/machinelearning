@@ -1,0 +1,13 @@
+
+Internal error 2: Could not determine the path of the
+                  MATLAB root directory.
+
+                  original command path = /export/thomas/usr/local/MATLAB/MATLAB_Production_Server/R2015a/bin/matlab
+                  current  command path = /export/thomas/usr/local/MATLAB/MATLAB_Production_Server/R2015a/bin/matlab
+
+                  Please contact:
+
+                      MathWorks Technical Support
+
+                  for further assistance.
+

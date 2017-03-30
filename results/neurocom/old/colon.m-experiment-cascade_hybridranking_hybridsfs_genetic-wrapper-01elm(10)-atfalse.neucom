@@ -1,0 +1,17 @@
+bash matlab.bash <<< "experiment('datasets/bio/colon.m', 'elm(10)', 'cascade_hybridranking_hybridsfs_genetic', 'wrapper', 01, 2918, false), quit" > results/colon.m-experiment-cascade_hybridranking_hybridsfs_genetic-wrapper-01elm(10)-atfalse.neucom
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> cascade_hybridranking_hybridsfs_genetic
+round  1 -> seed: 9839 | perf: 0.711931, time: 1726.110000
+round  2 -> seed: 2385 | perf: 0.623669, time: 1819.710000
+round  3 -> seed:  867 | perf: 0.684394, time: 1592.100000
+round  4 -> seed: 3976 | perf: 0.622937, time: 1588.640000
+round  5 -> seed: 9026 | 
